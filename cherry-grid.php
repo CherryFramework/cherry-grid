@@ -49,7 +49,7 @@ if ( !class_exists( 'Cherry_Grid' ) ) {
 			add_action( 'plugins_loaded', array( $this, 'lang' ), 2 );
 
 			// Load public-facing style sheet and JavaScript.
-			add_action( 'wp_enqueue_scripts', array( $this, 'assets' ), 20 );
+			add_action( 'wp_enqueue_scripts',         array( $this, 'assets' ), 20 );
 			add_filter( 'cherry_compiler_static_css', array( $this, 'add_style_to_compiler' ) );
 
 			add_filter( 'body_class', array( $this, 'add_noflex_classes' ) );
@@ -162,7 +162,11 @@ if ( !class_exists( 'Cherry_Grid' ) ) {
 		 * @param  array $handles CSS handles to compile
 		 */
 		function add_style_to_compiler( $handles ) {
-			$handles['cherry-grid'] = CHERRY_GRID_URI . 'assets/css/style.css';
+			$handles = array_merge(
+				array( 'cherry-grid' => plugins_url( 'assets/css/style.css', __FILE__ ) ),
+				$handles
+			);
+
 			return $handles;
 		}
 
