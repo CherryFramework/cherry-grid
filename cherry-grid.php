@@ -6,7 +6,7 @@
  * Version:     1.0.0
  * Author:      Cherry Team
  * Author URI:  http://www.cherryframework.com/
- * Text Domain: cherry-team
+ * Text Domain: cherry-grid
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Domain Path: /languages
