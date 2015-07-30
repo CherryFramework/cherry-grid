@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blank\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-21 10:43+0300\n"
+"POT-Creation-Date: 2015-07-30 17:31+0300\n"
 "PO-Revision-Date: 2015-04-06 06:14+0300\n"
 "Last-Translator: Vladimir Anokhin <ano.vladimir@gmail.com>\n"
 "Language-Team: Cherry Team <support@cherryframework.com>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "esc_attr__;_x:1,2c;_n:1,2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.2\n"
+"X-Generator: Poedit 1.8.3\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SearchPath-0: .\n"
 
@@ -65,7 +65,7 @@ msgid "There are no posts found"
 msgstr ""
 
 #: includes/class-cherry-grid-shortcode.php:117
-msgid "Template file not exists"
+msgid "Template file does not exist"
 msgstr ""
 
 #: includes/class-cherry-grid-shortcode.php:334
@@ -73,11 +73,11 @@ msgid "Grid"
 msgstr ""
 
 #: includes/class-cherry-grid-shortcode.php:341
-msgid "Number posts"
+msgid "Number of posts"
 msgstr ""
 
 #: includes/class-cherry-grid-shortcode.php:342
-msgid "Set number posts to show"
+msgid "Set number of posts to show"
 msgstr ""
 
 #: includes/class-cherry-grid-shortcode.php:347

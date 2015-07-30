@@ -114,7 +114,7 @@ class Cherry_Grid_Shortcode {
 				$tpl_file = $this->get_template_path( $atts['template'], 'grid' );
 
 				if ( ! $tpl_file ) {
-					return '<div class="error">' . __( 'Template file not exists', 'cherry-grid' ) . '</div>';
+					return '<div class="error">' . __( 'Template file does not exist', 'cherry-grid' ) . '</div>';
 				}
 
 				$macros = '/%%([a-zA-Z]+[^%]{2})(=[\'\"]([a-zA-Z0-9-_\s]+)[\'\"])?%%/';
@@ -338,8 +338,8 @@ class Cherry_Grid_Shortcode {
 			'atts'  => array( // List of shortcode params (attributes).
 				'num' => array(
 					'default' => 8,
-					'name'    => __( 'Number posts', 'cherry-grid' ),
-					'desc'    => __( 'Set number posts to show', 'cherry-grid' )
+					'name'    => __( 'Number of posts', 'cherry-grid' ),
+					'desc'    => __( 'Set number of posts to show', 'cherry-grid' )
 				),
 				'post_type' => array(
 					'default' => 'post',
