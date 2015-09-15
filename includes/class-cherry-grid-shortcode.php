@@ -85,7 +85,6 @@ class Cherry_Grid_Shortcode {
 			$masonry_atts = ' data-masonry-atts=\'' . json_encode( $data_atts ) . '\'';
 		}
 
-
 		$query_args = array(
 			'posts_per_page'      => $atts['num'],
 			'ignore_sticky_posts' => true,
@@ -117,14 +116,14 @@ class Cherry_Grid_Shortcode {
 					return '<div class="error">' . __( 'Template file does not exist', 'cherry-grid' ) . '</div>';
 				}
 
-				$macros = '/%%([a-zA-Z]+[^%]{2})(=[\'\"]([a-zA-Z0-9-_\s]+)[\'\"])?%%/';
-				$this->setup_template_data( $atts );
+				$macros    = '/%%([a-zA-Z]+[^%]{2})(=[\'\"]([a-zA-Z0-9-_\s]+)[\'\"])?%%/';
+				$callbacks = $this->setup_template_data( $atts );
 
 				while ( $grid_query->have_posts() ) {
 
 					$grid_query->the_post();
 
-					$meta = get_post_meta( $grid_query->post->ID, '_cherry_grid', true );
+					$meta = $callbacks->get_meta();
 
 					ob_start();
 					require $tpl_file;
@@ -219,6 +218,7 @@ class Cherry_Grid_Shortcode {
 
 		$this->grid_data = apply_filters( 'cherry_grid_shortcode_data_callbacks', $data, $atts );
 
+		return $callbacks;
 	}
 
 	/**

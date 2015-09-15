@@ -33,12 +33,64 @@ class Cherry_Grid_Shortcode_Callbacks {
 	 */
 	public $grid_meta = array();
 
+	/**
+	 * Grid data
+	 * @var array
+	 */
+	public $grid_data = array();
+
 	function __construct( $atts ) {
 		$this->atts = $atts;
 	}
 
-	function setup_meta( $grid_meta ) {
-		$this->grid_meta = $grid_meta;
+	/**
+	 * Clear post data after loop iteration
+	 *
+	 * @since  1.0.3
+	 * @return void
+	 */
+	public function clear_data() {
+		$this->grid_meta = array();
+		$this->grid_data = array();
+	}
+
+	/**
+	 * Get post meta
+	 *
+	 * @since 1.0.3
+	 */
+	public function get_meta() {
+		if ( null == $this->grid_meta ) {
+			global $post;
+			$this->grid_meta = get_post_meta( $post->ID, '_cherry_grid', true );
+		}
+		return $this->grid_meta;
+	}
+
+	/**
+	 * Get post title
+	 *
+	 * @since  1.0.3
+	 * @return string
+	 */
+	public function post_title() {
+		if ( ! isset( $this->grid_data['title'] ) ) {
+			$this->grid_data['title'] = get_the_title();
+		}
+		return $this->grid_data['title'];
+	}
+
+	/**
+	 * Get post permalink
+	 *
+	 * @since  1.0.3
+	 * @return string
+	 */
+	public function post_permalink() {
+		if ( ! isset( $this->grid_data['permalink'] ) ) {
+			$this->grid_data['permalink'] = get_permalink();
+		}
+		return $this->grid_data['permalink'];
 	}
 
 	/**
@@ -59,7 +111,7 @@ class Cherry_Grid_Shortcode_Callbacks {
 	 */
 	public function get_title() {
 		$format = '<h3 class="cherry-grid_title"><a href="%2$s">%1$s</a></h3>';
-		return sprintf( $format, get_the_title(), get_permalink() );
+		return sprintf( $format, $this->post_title(), $this->post_permalink() );
 	}
 
 	/**
@@ -80,9 +132,7 @@ class Cherry_Grid_Shortcode_Callbacks {
 			return;
 		}
 
-		$grid_meta = ( ! empty( $this->grid_meta ) )
-						? $this->grid_meta
-						: get_post_meta( $post->ID, CHERRY_GRID_POSTMETA, true );
+		$grid_meta = $this->get_meta();
 
 		if ( isset( $grid_meta['show_thumb'] ) && 'no' == $grid_meta['show_thumb'] ) {
 			return;
@@ -92,10 +142,10 @@ class Cherry_Grid_Shortcode_Callbacks {
 		$image  = get_the_post_thumbnail(
 			$post->ID,
 			array( $this->atts['thumbnail_size'], $this->atts['thumbnail_size'] ),
-			array( 'alt' => get_the_title() )
+			array( 'alt' => $this->post_title() )
 		);
 
-		return sprintf( $format, $image, get_permalink() );
+		return sprintf( $format, $image, $this->post_permalink() );
 	}
 
 	/**
@@ -171,9 +221,7 @@ class Cherry_Grid_Shortcode_Callbacks {
 
 		if ( ! $excerpt ) {
 
-			$grid_meta = ( ! empty( $this->grid_meta ) )
-							? $this->grid_meta
-							: get_post_meta( $post->ID, CHERRY_GRID_POSTMETA, true );
+			$grid_meta = $this->get_meta();
 
 			$excerpt_length = ( false != $grid_meta && ! empty( $grid_meta['excerpt_length'] ) )
 								? $grid_meta['excerpt_length']
@@ -218,7 +266,7 @@ class Cherry_Grid_Shortcode_Callbacks {
 		$format = '<a href="%2$s" class="%3$s">%1$s</a>';
 		$text   = $this->atts['button_text'];
 		$class  = esc_attr( $class );
-		$url    = get_permalink();
+		$url    = $this->post_permalink();
 
 		return sprintf( $format, $text, $url, $class );
 
