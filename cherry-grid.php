@@ -3,7 +3,7 @@
  * Plugin Name: Cherry Grid
  * Plugin URI:  http://www.cherryframework.com/
  * Description: Adds shortcode with masonry based layout.
- * Version:     1.0.1
+ * Version:     1.0.2
  * Author:      Cherry Team
  * Author URI:  http://www.cherryframework.com/
  * Text Domain: cherry-grid
@@ -72,7 +72,7 @@ if ( !class_exists( 'Cherry_Grid' ) ) {
 			 *
 			 * @since 1.0.0
 			 */
-			define( 'CHERRY_GRID_VERSION', '1.0.1' );
+			define( 'CHERRY_GRID_VERSION', '1.0.2' );
 
 			/**
 			 * Set the slug of the plugin.
@@ -150,7 +150,7 @@ if ( !class_exists( 'Cherry_Grid' ) ) {
 			);
 			wp_enqueue_script(
 				'cherry-grid',
-				CHERRY_GRID_URI . 'assets/js/script.js', array( 'jquery' ), CHERRY_GRID_VERSION, true
+				CHERRY_GRID_URI . 'assets/js/min/script.min.js', array( 'jquery' ), CHERRY_GRID_VERSION, true
 			);
 		}
 

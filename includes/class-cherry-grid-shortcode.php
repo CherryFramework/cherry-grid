@@ -85,7 +85,6 @@ class Cherry_Grid_Shortcode {
 			$masonry_atts = ' data-masonry-atts=\'' . json_encode( $data_atts ) . '\'';
 		}
 
-
 		$query_args = array(
 			'posts_per_page'      => $atts['num'],
 			'ignore_sticky_posts' => true,
@@ -114,17 +113,17 @@ class Cherry_Grid_Shortcode {
 				$tpl_file = $this->get_template_path( $atts['template'], 'grid' );
 
 				if ( ! $tpl_file ) {
-					return '<div class="error">' . __( 'Template file not exists', 'cherry-grid' ) . '</div>';
+					return '<div class="error">' . __( 'Template file does not exist', 'cherry-grid' ) . '</div>';
 				}
 
-				$macros = '/%%([a-zA-Z]+[^%]{2})(=[\'\"]([a-zA-Z0-9-_\s]+)[\'\"])?%%/';
-				$this->setup_template_data( $atts );
+				$macros    = '/%%([a-zA-Z]+[^%]{2})(=[\'\"]([a-zA-Z0-9-_\s]+)[\'\"])?%%/';
+				$callbacks = $this->setup_template_data( $atts );
 
 				while ( $grid_query->have_posts() ) {
 
 					$grid_query->the_post();
 
-					$meta = get_post_meta( $grid_query->post->ID, '_cherry_grid', true );
+					$meta = $callbacks->get_meta();
 
 					ob_start();
 					require $tpl_file;
@@ -157,6 +156,8 @@ class Cherry_Grid_Shortcode {
 
 					$content = preg_replace_callback( $macros, array( $this, 'replace_callback' ), $tpl );
 					$result .= '<li class="cherry-grid_item ' . $item_class . '"' . $custom_style . '><div class="cherry-grid_item_inner">' . $content . '</div></li>';
+
+					$callbacks->clear_data();
 				}
 
 				$css_template_name = CHERRY_GRID_DIR . 'templates/css/' . $atts['type'] . '.css';
@@ -219,6 +220,7 @@ class Cherry_Grid_Shortcode {
 
 		$this->grid_data = apply_filters( 'cherry_grid_shortcode_data_callbacks', $data, $atts );
 
+		return $callbacks;
 	}
 
 	/**
@@ -338,8 +340,8 @@ class Cherry_Grid_Shortcode {
 			'atts'  => array( // List of shortcode params (attributes).
 				'num' => array(
 					'default' => 8,
-					'name'    => __( 'Number posts', 'cherry-grid' ),
-					'desc'    => __( 'Set number posts to show', 'cherry-grid' )
+					'name'    => __( 'Number of posts', 'cherry-grid' ),
+					'desc'    => __( 'Set number of posts to show', 'cherry-grid' )
 				),
 				'post_type' => array(
 					'default' => 'post',
