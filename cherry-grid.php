@@ -150,7 +150,7 @@ if ( !class_exists( 'Cherry_Grid' ) ) {
 			);
 			wp_enqueue_script(
 				'cherry-grid',
-				CHERRY_GRID_URI . 'assets/js/script.js', array( 'jquery' ), CHERRY_GRID_VERSION, true
+				CHERRY_GRID_URI . 'assets/js/min/script.min.js', array( 'jquery' ), CHERRY_GRID_VERSION, true
 			);
 		}
 
