@@ -1,10 +1,9 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: blank\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-30 17:31+0300\n"
-"PO-Revision-Date: 2015-04-06 06:14+0300\n"
+"POT-Creation-Date: 2015-09-15 16:38+0200\n"
+"PO-Revision-Date: 2015-09-15 16:38+0200\n"
 "Last-Translator: Vladimir Anokhin <ano.vladimir@gmail.com>\n"
 "Language-Team: Cherry Team <support@cherryframework.com>\n"
 "Language: su\n"
@@ -15,7 +14,7 @@ msgstr ""
 "esc_attr__;_x:1,2c;_n:1,2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.3\n"
+"X-Generator: Poedit 1.7.6\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SearchPath-0: .\n"
 
@@ -56,118 +55,110 @@ msgid "CSS class for post item"
 msgstr ""
 
 #: includes/class-cherry-grid-shortcode.php:63
-#: includes/class-cherry-grid-shortcode.php:399
+#: includes/class-cherry-grid-shortcode.php:401
 msgid "Read More"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:98
+#: includes/class-cherry-grid-shortcode.php:97
 msgid "There are no posts found"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:117
+#: includes/class-cherry-grid-shortcode.php:116
 msgid "Template file does not exist"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:334
+#: includes/class-cherry-grid-shortcode.php:336
 msgid "Grid"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:341
+#: includes/class-cherry-grid-shortcode.php:343
 msgid "Number of posts"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:342
+#: includes/class-cherry-grid-shortcode.php:344
 msgid "Set number of posts to show"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:347
+#: includes/class-cherry-grid-shortcode.php:349
 msgid "Post type"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:348
+#: includes/class-cherry-grid-shortcode.php:350
 msgid "Select post type to get posts from"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:354
+#: includes/class-cherry-grid-shortcode.php:356
 msgid "Grid layout"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:355
+#: includes/class-cherry-grid-shortcode.php:357
 msgid "Select grid layout type"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:357
+#: includes/class-cherry-grid-shortcode.php:359
 msgid "Rows"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:358
+#: includes/class-cherry-grid-shortcode.php:360
 msgid "Columns"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:359
+#: includes/class-cherry-grid-shortcode.php:361
 msgid "Masonry"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:368
+#: includes/class-cherry-grid-shortcode.php:370
 msgid "Gutter Width"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:369
+#: includes/class-cherry-grid-shortcode.php:371
 msgid "Set gutter width (in px)"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:377
+#: includes/class-cherry-grid-shortcode.php:379
 msgid "Columns number"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:378
+#: includes/class-cherry-grid-shortcode.php:380
 msgid "Set columns number (has effect only for columns layout type)"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:386
+#: includes/class-cherry-grid-shortcode.php:388
 msgid "Initial item width"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:387
+#: includes/class-cherry-grid-shortcode.php:389
 msgid "Set initial item width"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:395
+#: includes/class-cherry-grid-shortcode.php:397
 msgid "Thumbnail size"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:396
+#: includes/class-cherry-grid-shortcode.php:398
 msgid "Set post thumbnail size to show"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:400
+#: includes/class-cherry-grid-shortcode.php:402
 msgid "Read more button text"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:401
+#: includes/class-cherry-grid-shortcode.php:403
 msgid "Enter text for read more button"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:405
+#: includes/class-cherry-grid-shortcode.php:407
 msgid "Custom CSS class"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:406
+#: includes/class-cherry-grid-shortcode.php:408
 msgid "Enter custom CSS class name"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:414
+#: includes/class-cherry-grid-shortcode.php:416
 msgid "Template"
 msgstr ""
 
-#: includes/class-cherry-grid-shortcode.php:415
+#: includes/class-cherry-grid-shortcode.php:417
 msgid "Shortcode template"
-msgstr ""
-
-#: templates/shortcodes/grid/default.tmpl:4
-msgid "Posted on"
-msgstr ""
-
-#: templates/shortcodes/grid/default.tmpl:4
-msgid "by"
 msgstr ""
