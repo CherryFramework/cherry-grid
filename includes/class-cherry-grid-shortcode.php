@@ -156,6 +156,8 @@ class Cherry_Grid_Shortcode {
 
 					$content = preg_replace_callback( $macros, array( $this, 'replace_callback' ), $tpl );
 					$result .= '<li class="cherry-grid_item ' . $item_class . '"' . $custom_style . '><div class="cherry-grid_item_inner">' . $content . '</div></li>';
+
+					$callbacks->clear_data();
 				}
 
 				$css_template_name = CHERRY_GRID_DIR . 'templates/css/' . $atts['type'] . '.css';
