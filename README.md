@@ -6,8 +6,12 @@ Adds grid layout output.
 
 #### v1.0.2 ####
 
-* UPD: Minify JS and CSS
-* UPD: Improve macros callbacks performance
+- UPD: improve performance for macros callbacks.
+- UPD: minify assets.
+- UPD: translation files.
+- UPD: Text to translate
+- FIX: base update class
+- FIX: restore data after loop iteration.
 
 ## Help
 Found a bug? Feature requests? [Create an issue - Thanks!](https://github.com/CherryFramework/cherry-grid/issues/new)
