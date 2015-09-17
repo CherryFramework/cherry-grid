@@ -148,7 +148,7 @@ if ( !class_exists( 'Cherry_Grid' ) ) {
 				'cherry-grid',
 				CHERRY_GRID_URI . 'assets/css/style.css', array(), CHERRY_GRID_VERSION
 			);
-			wp_enqueue_script(
+			wp_register_script(
 				'cherry-grid',
 				CHERRY_GRID_URI . 'assets/js/min/script.min.js', array( 'jquery' ), CHERRY_GRID_VERSION, true
 			);
@@ -171,7 +171,7 @@ if ( !class_exists( 'Cherry_Grid' ) ) {
 		}
 
 		/**
-		 * Add special class to body fr browsers that not supports flex
+		 * Add special class to body for browsers that not supports flex
 		 * It's IE9 and lover (unexpected, yeh...)
 		 *
 		 * @since  1.0.0
