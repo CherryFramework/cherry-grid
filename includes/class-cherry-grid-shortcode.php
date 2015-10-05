@@ -404,8 +404,8 @@ class Cherry_Grid_Shortcode {
 				),
 				'class' => array(
 					'default' => '',
-					'name'    => __( 'Custom CSS class', 'cherry-grid' ),
-					'desc'    => __( 'Enter custom CSS class name', 'cherry-grid' )
+					'name'    => __( 'Class', 'cherry-grid' ),
+					'desc'    => __( 'Extra CSS class', 'cherry-grid' )
 				),
 				'template' => array(
 					'type'   => 'select',
