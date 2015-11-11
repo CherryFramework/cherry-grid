@@ -1,0 +1,180 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cherry-grid\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-30 13:01+0200\n"
+"PO-Revision-Date: 2015-10-30 13:01+0200\n"
+"Last-Translator: J.L.Dokter <jldokter@gmail.com>\n"
+"Language-Team: Cherry Team <support@cherryframework.com>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__;_n:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/admin/class-cherry-grid-metabox.php:60
+msgid "Grid Options"
+msgstr "Опции сетки"
+
+#: includes/admin/class-cherry-grid-metabox.php:68
+msgid "Width"
+msgstr "Ширина"
+
+#: includes/admin/class-cherry-grid-metabox.php:82
+msgid "Show with image"
+msgstr "Отображать с изображением"
+
+#: includes/admin/class-cherry-grid-metabox.php:87
+msgid "Yes"
+msgstr "Да"
+
+#: includes/admin/class-cherry-grid-metabox.php:88
+msgid "No"
+msgstr "Нет"
+
+#: includes/admin/class-cherry-grid-metabox.php:94
+msgid "Excerpt length"
+msgstr "Длина выдержки"
+
+#: includes/admin/class-cherry-grid-metabox.php:102
+msgid "Item background color"
+msgstr "Цвет фона элемента"
+
+#: includes/admin/class-cherry-grid-metabox.php:109
+msgid "Item text color"
+msgstr "Цвет текста элемента"
+
+#: includes/admin/class-cherry-grid-metabox.php:116
+msgid "CSS class for post item"
+msgstr "CSS класс записи"
+
+#: includes/class-cherry-grid-shortcode.php:63
+#: includes/class-cherry-grid-shortcode.php:401
+msgid "Read More"
+msgstr "Читать дальше"
+
+#: includes/class-cherry-grid-shortcode.php:97
+msgid "There are no posts found"
+msgstr "Записи не найдены"
+
+#: includes/class-cherry-grid-shortcode.php:116
+msgid "Template file does not exist"
+msgstr "Файл шаблона не существует"
+
+#: includes/class-cherry-grid-shortcode.php:336
+msgid "Grid"
+msgstr "Сетка"
+
+#: includes/class-cherry-grid-shortcode.php:343
+msgid "Number of posts"
+msgstr "Количество записей"
+
+#: includes/class-cherry-grid-shortcode.php:344
+msgid "Set number of posts to show"
+msgstr "Установите количество отображаемых записей"
+
+#: includes/class-cherry-grid-shortcode.php:349
+msgid "Post type"
+msgstr "Тип записи"
+
+#: includes/class-cherry-grid-shortcode.php:350
+msgid "Select post type to get posts from"
+msgstr "Выберите тип записей "
+
+#: includes/class-cherry-grid-shortcode.php:356
+msgid "Grid layout"
+msgstr "Разметка сетки"
+
+#: includes/class-cherry-grid-shortcode.php:357
+msgid "Select grid layout type"
+msgstr "Выберите тип разметки сетки"
+
+#: includes/class-cherry-grid-shortcode.php:359
+msgid "Rows"
+msgstr "Ряды"
+
+#: includes/class-cherry-grid-shortcode.php:360
+msgid "Columns"
+msgstr "Колонки"
+
+#: includes/class-cherry-grid-shortcode.php:361
+msgid "Masonry"
+msgstr "Каскадная сетка"
+
+#: includes/class-cherry-grid-shortcode.php:370
+msgid "Gutter Width"
+msgstr "Расстояние между колонками "
+
+#: includes/class-cherry-grid-shortcode.php:371
+msgid "Set gutter width (in px)"
+msgstr "Установите расстояние между колонками (в px) "
+
+#: includes/class-cherry-grid-shortcode.php:379
+msgid "Columns number"
+msgstr "Количество колонок"
+
+#: includes/class-cherry-grid-shortcode.php:380
+msgid "Set columns number (has effect only for columns layout type)"
+msgstr ""
+"Установите количество колонок (данная опция работает только для разметки "
+"колонок)"
+
+#: includes/class-cherry-grid-shortcode.php:388
+msgid "Initial item width"
+msgstr "Исходная ширина элемента"
+
+#: includes/class-cherry-grid-shortcode.php:389
+msgid "Set initial item width"
+msgstr "Установите исходную ширину элемента"
+
+#: includes/class-cherry-grid-shortcode.php:397
+msgid "Thumbnail size"
+msgstr "Размер миниатюры"
+
+#: includes/class-cherry-grid-shortcode.php:398
+msgid "Set post thumbnail size to show"
+msgstr "Установите размер миниатюры записи"
+
+#: includes/class-cherry-grid-shortcode.php:402
+msgid "Read more button text"
+msgstr "Текст кнопки &quot;Читать дальше&quot;"
+
+#: includes/class-cherry-grid-shortcode.php:403
+msgid "Enter text for read more button"
+msgstr "Введите текст кнопки &quot;Читать дальше&quot;"
+
+#: includes/class-cherry-grid-shortcode.php:407
+msgid "Class"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:408
+msgid "Extra CSS class"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:416
+msgid "Template"
+msgstr "Шаблон"
+
+#: includes/class-cherry-grid-shortcode.php:417
+msgid "Shortcode template"
+msgstr "Шаблон шорткода"
+
+#~ msgid "Custom CSS class"
+#~ msgstr "Пользовательский CSS класс"
+
+#~ msgid "Enter custom CSS class name"
+#~ msgstr "Введите имя пользовательского CSS класса"
+
+#~ msgid "Posted on"
+#~ msgstr "Опубликован(а) на"
+
+#~ msgid "by"
+#~ msgstr " "

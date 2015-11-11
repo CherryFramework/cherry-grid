@@ -1,0 +1,179 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cherry-grid\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-30 13:01+0200\n"
+"PO-Revision-Date: 2015-10-30 13:01+0200\n"
+"Last-Translator: J.L.Dokter <jldokter@gmail.com>\n"
+"Language-Team: Cherry Team <support@cherryframework.com>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__;_n:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/admin/class-cherry-grid-metabox.php:60
+msgid "Grid Options"
+msgstr "Властивості сітки"
+
+#: includes/admin/class-cherry-grid-metabox.php:68
+msgid "Width"
+msgstr "Ширина"
+
+#: includes/admin/class-cherry-grid-metabox.php:82
+msgid "Show with image"
+msgstr "Відображати із зображенням"
+
+#: includes/admin/class-cherry-grid-metabox.php:87
+msgid "Yes"
+msgstr "Так"
+
+#: includes/admin/class-cherry-grid-metabox.php:88
+msgid "No"
+msgstr "Ні"
+
+#: includes/admin/class-cherry-grid-metabox.php:94
+msgid "Excerpt length"
+msgstr "Довжина скорочення"
+
+#: includes/admin/class-cherry-grid-metabox.php:102
+msgid "Item background color"
+msgstr "Колір тла елемента"
+
+#: includes/admin/class-cherry-grid-metabox.php:109
+msgid "Item text color"
+msgstr "Колір тексту елемента"
+
+#: includes/admin/class-cherry-grid-metabox.php:116
+msgid "CSS class for post item"
+msgstr "Клас CSS публікації"
+
+#: includes/class-cherry-grid-shortcode.php:63
+#: includes/class-cherry-grid-shortcode.php:401
+msgid "Read More"
+msgstr "Детальніше"
+
+#: includes/class-cherry-grid-shortcode.php:97
+msgid "There are no posts found"
+msgstr "Публікацій не виявлено"
+
+#: includes/class-cherry-grid-shortcode.php:116
+msgid "Template file does not exist"
+msgstr "Немає файлу шаблона"
+
+#: includes/class-cherry-grid-shortcode.php:336
+msgid "Grid"
+msgstr "Сітка"
+
+#: includes/class-cherry-grid-shortcode.php:343
+msgid "Number of posts"
+msgstr "Кількість публікацій"
+
+#: includes/class-cherry-grid-shortcode.php:344
+msgid "Set number of posts to show"
+msgstr "Встановіть кількість публікацій для відображення"
+
+#: includes/class-cherry-grid-shortcode.php:349
+msgid "Post type"
+msgstr "Тип публікації"
+
+#: includes/class-cherry-grid-shortcode.php:350
+msgid "Select post type to get posts from"
+msgstr "Оберіть тип публікації "
+
+#: includes/class-cherry-grid-shortcode.php:356
+msgid "Grid layout"
+msgstr "Макет сітки"
+
+#: includes/class-cherry-grid-shortcode.php:357
+msgid "Select grid layout type"
+msgstr "Оберіть тип макету сітки"
+
+#: includes/class-cherry-grid-shortcode.php:359
+msgid "Rows"
+msgstr "Ряди"
+
+#: includes/class-cherry-grid-shortcode.php:360
+msgid "Columns"
+msgstr "Стовпці"
+
+#: includes/class-cherry-grid-shortcode.php:361
+msgid "Masonry"
+msgstr "Цеглинки"
+
+#: includes/class-cherry-grid-shortcode.php:370
+msgid "Gutter Width"
+msgstr "Ширина відступу"
+
+#: includes/class-cherry-grid-shortcode.php:371
+msgid "Set gutter width (in px)"
+msgstr "Вкажіть ширину відступу (у пікселях)"
+
+#: includes/class-cherry-grid-shortcode.php:379
+msgid "Columns number"
+msgstr "Кількість стовпців"
+
+#: includes/class-cherry-grid-shortcode.php:380
+msgid "Set columns number (has effect only for columns layout type)"
+msgstr ""
+"Зазначте кількість стовпців (застосовується для типу макету \"стовпці\")"
+
+#: includes/class-cherry-grid-shortcode.php:388
+msgid "Initial item width"
+msgstr "Ширина першого елемента"
+
+#: includes/class-cherry-grid-shortcode.php:389
+msgid "Set initial item width"
+msgstr "Вкажіть ширину першого елемента"
+
+#: includes/class-cherry-grid-shortcode.php:397
+msgid "Thumbnail size"
+msgstr "Розмір мініатюри"
+
+#: includes/class-cherry-grid-shortcode.php:398
+msgid "Set post thumbnail size to show"
+msgstr "Вкажіть розмір мініатюри публікації"
+
+#: includes/class-cherry-grid-shortcode.php:402
+msgid "Read more button text"
+msgstr "Підпис кнопки \"Детальніше\"."
+
+#: includes/class-cherry-grid-shortcode.php:403
+msgid "Enter text for read more button"
+msgstr "Зазначте бажаний підпис кнопки \"Детальніше\"."
+
+#: includes/class-cherry-grid-shortcode.php:407
+msgid "Class"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:408
+msgid "Extra CSS class"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:416
+msgid "Template"
+msgstr "Шаблон"
+
+#: includes/class-cherry-grid-shortcode.php:417
+msgid "Shortcode template"
+msgstr "Шаблон шорткоду"
+
+#~ msgid "Custom CSS class"
+#~ msgstr "Користувацький клас CSS"
+
+#~ msgid "Enter custom CSS class name"
+#~ msgstr "Вкажіть користувацький клас CSS"
+
+#~ msgid "Posted on"
+#~ msgstr "Опубліковано"
+
+#~ msgid "by"
+#~ msgstr " "
