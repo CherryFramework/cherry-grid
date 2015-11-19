@@ -214,7 +214,7 @@ class Cherry_Grid_Meta_Boxes {
 	 * @since  1.0.0
 	 * @param  int    $post_id current post ID.
 	 * @param  object $post    current post object.
-	 * @return
+	 * @return null|int
 	 */
 	public function save_post( $post_id, $post ) {
 
