@@ -114,7 +114,7 @@ if ( ! class_exists( 'Cherry_Grid' ) ) {
 		 * @since 1.0.0
 		 */
 		function includes() {
-			require_once( CHERRY_GRID_DIR . 'includes/class-cherry-grid-shortcode.php' );
+			require_once( CHERRY_GRID_DIR . 'public/includes/class-cherry-grid-shortcode.php' );
 		}
 
 		/**
@@ -132,7 +132,7 @@ if ( ! class_exists( 'Cherry_Grid' ) ) {
 		 * @since 1.0.0
 		 */
 		function admin() {
-			require_once( CHERRY_GRID_DIR . 'includes/admin/class-cherry-grid-metabox.php' );
+			require_once( CHERRY_GRID_DIR . 'admin/includes/class-cherry-grid-metabox.php' );
 			require_once( CHERRY_GRID_DIR . 'admin/includes/class-cherry-update/class-cherry-plugin-update.php' );
 
 			$Cherry_Plugin_Update = new Cherry_Plugin_Update();

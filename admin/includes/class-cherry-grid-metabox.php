@@ -282,7 +282,8 @@ class Cherry_Grid_Meta_Boxes {
 
 			case 'width':
 				$value = absint( $value );
-				if ( 0 >= $value || 4 <= $value ) {
+
+				if ( 0 >= $value || 4 < $value ) {
 					$value = 1;
 				}
 				break;
