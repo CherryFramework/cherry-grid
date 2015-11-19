@@ -31,6 +31,12 @@ class Cherry_Grid_Meta_Boxes {
 
 	}
 
+	/**
+	 * Register metaboxes for post types that supports grid options
+	 *
+	 * @since  1.0.0
+	 * @return void
+	 */
 	function add_meta_boxes() {
 
 		$post_types = get_post_types( array( 'public' => true ) );
@@ -44,7 +50,9 @@ class Cherry_Grid_Meta_Boxes {
 	/**
 	 * Adds the meta box container.
 	 *
-	 * @since 1.0.0
+	 * @since  1.0.0
+	 * @param  object $post current post object.
+	 * @return void
 	 */
 	public function add_single_box( $post ) {
 
@@ -52,6 +60,7 @@ class Cherry_Grid_Meta_Boxes {
 		 * Filter the array of 'add_meta_box' parametrs.
 		 *
 		 * @since 1.0.0
+		 * @var   array meta box parameters.
 		 */
 		$metabox = apply_filters(
 			'cherry_grid_metabox_params',
@@ -65,7 +74,7 @@ class Cherry_Grid_Meta_Boxes {
 					'width' => array(
 						'id'          => 'width',
 						'type'        => 'select',
-						'title'       => __('Width', 'cherry-grid'),
+						'title'       => __( 'Width', 'cherry-grid' ),
 						'label'       => '',
 						'description' => '',
 						'value'       => 1,
@@ -73,53 +82,52 @@ class Cherry_Grid_Meta_Boxes {
 							1 => '1x',
 							2 => '2x',
 							3 => '3x',
-							4 => '4x'
-						)
+							4 => '4x',
+						),
 					),
 					'show_thumb' => array(
 						'id'          => 'show_thumb',
 						'type'        => 'select',
-						'title'       => __('Show with image', 'cherry-grid'),
+						'title'       => __( 'Show with image', 'cherry-grid' ),
 						'label'       => '',
 						'description' => '',
 						'value'       => 1,
 						'options'     => array(
 							'yes' => __( 'Yes', 'cherry-grid' ),
-							'no' => __( 'No', 'cherry-grid' )
-						)
+							'no' => __( 'No', 'cherry-grid' ),
+						),
 					),
 					'excerpt_length' => array(
 						'id'          => 'excerpt_length',
 						'type'        => 'text',
-						'title'       => __('Excerpt length', 'cherry-grid'),
+						'title'       => __( 'Excerpt length', 'cherry-grid' ),
 						'label'       => '',
 						'description' => '',
-						'value'       => 40
+						'value'       => 40,
 					),
 					'item_background' => array(
 						'id'          => 'item_background',
 						'type'        => 'colorpicker',
 						'title'       => __( 'Item background color', 'cherry-grid' ),
 						'description' => '',
-						'value'       => ''
+						'value'       => '',
 					),
 					'item_color' => array(
 						'id'          => 'item_color',
 						'type'        => 'colorpicker',
 						'title'       => __( 'Item text color', 'cherry-grid' ),
 						'description' => '',
-						'value'       => ''
+						'value'       => '',
 					),
 					'css_class'     => array(
 						'id'          => 'css_class',
 						'type'        => 'text',
-						'title'       => __('CSS class for post item', 'cherry-grid'),
+						'title'       => __( 'CSS class for post item', 'cherry-grid' ),
 						'label'       => '',
 						'description' => '',
-						'value'       => ''
-					)
-
-				)
+						'value'       => '',
+					),
+				),
 			),
 			$post
 		);
@@ -143,9 +151,10 @@ class Cherry_Grid_Meta_Boxes {
 	/**
 	 * Prints the box content.
 	 *
-	 * @since 1.0.0
-	 * @param object $post    Current post object.
-	 * @param array  $metabox
+	 * @since  1.0.0
+	 * @param  object $post    current post object.
+	 * @param  array  $metabox metabox arguments.
+	 * @return void
 	 */
 	public function callback_metabox( $post, $metabox ) {
 
@@ -163,7 +172,7 @@ class Cherry_Grid_Meta_Boxes {
 			array(
 				'name_prefix' => CHERRY_GRID_POSTMETA,
 				'pattern'     => 'inline',
-				'class'       => array( 'section' => 'single-section' )
+				'class'       => array( 'section' => 'single-section' ),
 			)
 		);
 
@@ -176,7 +185,7 @@ class Cherry_Grid_Meta_Boxes {
 				continue;
 			}
 
-			$field['value'] = isset( $meta[$field['id']] ) ? $meta[$field['id']] : $field['value'];
+			$field['value'] = isset( $meta[ $field['id'] ] ) ? $meta[ $field['id'] ] : $field['value'];
 
 			echo $builder->add_form_item( $field );
 
@@ -222,12 +231,14 @@ class Cherry_Grid_Meta_Boxes {
 		$post_type = get_post_type_object( $post->post_type );
 
 		// Check if the current user has permission to edit the post.
-		if ( !current_user_can( $post_type->cap->edit_post, $post_id ) )
+		if ( ! current_user_can( $post_type->cap->edit_post, $post_id ) ) {
 			return $post_id;
+		}
 
 		// Don't save if the post is only a revision.
-		if ( 'revision' == $post->post_type )
+		if ( 'revision' == $post->post_type ) {
 			return;
+		}
 
 		// Array of new post meta value.
 		$new_meta_value = array();
@@ -257,8 +268,9 @@ class Cherry_Grid_Meta_Boxes {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @param  string &$item array value
-	 * @param  string $key   array key
+	 * @param  string $value array value.
+	 * @param  string $key   array key.
+	 * @return string
 	 */
 	public function sanitize_meta( $key, $value ) {
 
@@ -295,12 +307,10 @@ class Cherry_Grid_Meta_Boxes {
 	 * @return object
 	 */
 	public static function get_instance() {
-
 		// If the single instance hasn't been set, set it now.
 		if ( null == self::$instance ) {
 			self::$instance = new self;
 		}
-
 		return self::$instance;
 	}
 }

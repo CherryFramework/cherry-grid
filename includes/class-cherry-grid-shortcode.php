@@ -10,7 +10,7 @@
  */
 
 // If this file is called directly, abort.
-if ( !defined( 'WPINC' ) ) {
+if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
@@ -30,6 +30,9 @@ class Cherry_Grid_Shortcode {
 	 */
 	public $grid_data = array();
 
+	/**
+	 * Constructor for the class
+	 */
 	function __construct() {
 
 		add_shortcode( 'grid', array( $this, 'shortcode' ) );
@@ -43,11 +46,12 @@ class Cherry_Grid_Shortcode {
 	}
 
 	/**
-	 * Main shortcode function
+	 * Main shortcode callback function
 	 *
 	 * @since  1.0.0
-	 * @param  array  $atts    shortcode atts
-	 * @param  string $content shortcode content (optional)
+	 * @param  array  $atts    shortcode atts.
+	 * @param  string $content shortcode content (optional).
+	 * @return string
 	 */
 	function shortcode( $atts, $content = null ) {
 
@@ -62,7 +66,7 @@ class Cherry_Grid_Shortcode {
 				'thumbnail_size' => 100,
 				'button_text'    => __( 'Read More', 'cherry-grid' ),
 				'template'       => 'default.tmpl',
-				'class'          => ''
+				'class'          => '',
 			),
 			$atts, 'grid'
 		);
@@ -70,7 +74,9 @@ class Cherry_Grid_Shortcode {
 		$atts = $this->sanitize_atts( $atts );
 
 		$masonry_atts = '';
+
 		if ( 'masonry' == $atts['type'] ) {
+
 			wp_enqueue_script( 'jquery-masonry' );
 			wp_enqueue_script( 'cherry-grid' );
 
@@ -88,7 +94,7 @@ class Cherry_Grid_Shortcode {
 		$query_args = array(
 			'posts_per_page'      => $atts['num'],
 			'ignore_sticky_posts' => true,
-			'post_type'           => $atts['post_type']
+			'post_type'           => $atts['post_type'],
 		);
 
 		$grid_query = new WP_Query( $query_args );
@@ -132,7 +138,7 @@ class Cherry_Grid_Shortcode {
 					$item_class = '';
 
 					if ( 'flex' == $atts['type'] || 'masonry' == $atts['type'] ) {
-						$width = isset( $meta['width'] ) ? $meta['width'] : 1;
+						$width      = isset( $meta['width'] ) ? $meta['width'] : 1;
 						$item_class = 'cherry-grid_item_' . $width;
 					}
 
@@ -180,9 +186,10 @@ class Cherry_Grid_Shortcode {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @param  string $class    current masonry block class
-	 * @param  string $template CSS template path
-	 * @param  array  $atts     shortocode attributes array
+	 * @param  string $class    current masonry block class.
+	 * @param  string $template CSS template path.
+	 * @param  array  $atts     shortocode attributes array.
+	 * @return string
 	 */
 	public function get_grid_style( $class, $template, $atts ) {
 
@@ -198,7 +205,8 @@ class Cherry_Grid_Shortcode {
 	 * Prepare template data to replace
 	 *
 	 * @since  1.0.0
-	 * @param  array  $atts shortcode attributes
+	 * @param  array $atts shortcode attributes.
+	 * @return object
 	 */
 	function setup_template_data( $atts ) {
 
@@ -215,7 +223,7 @@ class Cherry_Grid_Shortcode {
 			'comments' => array( $callbacks, 'get_comments' ),
 			'excerpt'  => array( $callbacks, 'get_excerpt' ),
 			'content'  => array( $callbacks, 'get_content' ),
-			'button'   => array( $callbacks, 'get_button' )
+			'button'   => array( $callbacks, 'get_button' ),
 		);
 
 		$this->grid_data = apply_filters( 'cherry_grid_shortcode_data_callbacks', $data, $atts );
@@ -236,12 +244,12 @@ class Cherry_Grid_Shortcode {
 	 * Replace callbaks for template file
 	 *
 	 * @since  1.0.0
-	 * @param  array   $matches replace matches
-	 * @return string           string with replaced data
+	 * @param  array $matches replace matches.
+	 * @return string         string with replaced data
 	 */
 	function replace_callback( $matches ) {
 
-		if ( !is_array( $matches ) ) {
+		if ( ! is_array( $matches ) ) {
 			return '';
 		}
 
@@ -276,6 +284,7 @@ class Cherry_Grid_Shortcode {
 	 *
 	 * @since  1.0.0
 	 * @param  array $atts shortcode attributes array
+	 * @return array|null
 	 */
 	function sanitize_atts( $atts ) {
 
@@ -304,17 +313,19 @@ class Cherry_Grid_Shortcode {
 	 * Sanitize numeric value
 	 *
 	 * @since  1.0.0
-	 * @param  mixed   $value   maybe integer
-	 * @param  integer $default default value
+	 * @param  mixed   $value   maybe integer.
+	 * @param  integer $default default value.
+	 * @return int
 	 */
 	function sanitize_num( $value, $default = 0 ) {
 
 		$value = absint( $value );
 
-		if ( 0 != $value )
+		if ( 0 != $value ) {
 			return $value;
-		else
+		} else {
 			return $default;
+		}
 
 	}
 
@@ -323,8 +334,8 @@ class Cherry_Grid_Shortcode {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @param  array   $shortcodes Original plugin shortcodes.
-	 * @return array               Modified array.
+	 * @param  array $shortcodes Original plugin shortcodes.
+	 * @return array             Modified array.
 	 */
 	public function shortcode_register( $shortcodes ) {
 
@@ -341,14 +352,14 @@ class Cherry_Grid_Shortcode {
 				'num' => array(
 					'default' => 8,
 					'name'    => __( 'Number of posts', 'cherry-grid' ),
-					'desc'    => __( 'Set number of posts to show', 'cherry-grid' )
+					'desc'    => __( 'Set number of posts to show', 'cherry-grid' ),
 				),
 				'post_type' => array(
 					'default' => 'post',
 					'type'    => 'select',
 					'name'    => __( 'Post type', 'cherry-grid' ),
 					'desc'    => __( 'Select post type to get posts from', 'cherry-grid' ),
-					'values'  => $post_types
+					'values'  => $post_types,
 				),
 				'type' => array(
 					'default' => 'flex',
@@ -359,7 +370,7 @@ class Cherry_Grid_Shortcode {
 						'flex'    => __( 'Rows', 'cherry-grid' ),
 						'columns' => __( 'Columns', 'cherry-grid' ),
 						'masonry' => __( 'Masonry', 'cherry-grid' ),
-					)
+					),
 				),
 				'gutter' => array(
 					'type'    => 'number',
@@ -405,7 +416,7 @@ class Cherry_Grid_Shortcode {
 				'class' => array(
 					'default' => '',
 					'name'    => __( 'Class', 'cherry-grid' ),
-					'desc'    => __( 'Extra CSS class', 'cherry-grid' )
+					'desc'    => __( 'Extra CSS class', 'cherry-grid' ),
 				),
 				'template' => array(
 					'type'   => 'select',
@@ -419,18 +430,19 @@ class Cherry_Grid_Shortcode {
 			),
 			'icon'     => 'th-large', // Custom icon (font-awesome).
 			'function' => array( $this, 'shortcode' ), // Name of shortcode function.
-			'use_template' => false
+			'use_template' => false,
 		);
 
 		return $shortcodes;
 	}
 
 	/**
-	 * regiter template directory for editor
+	 * regiter template directory for template editor to search .tmpl files in
 	 *
 	 * @since  1.0.0
 	 *
-	 * @return array  registered directories for editor
+	 * @param  array $dir default driectories array.
+	 * @return array registered directories for editor
 	 */
 	function register_template_dir( $dirs ) {
 		$dirs[] = CHERRY_GRID_DIR;
@@ -474,15 +486,12 @@ class Cherry_Grid_Shortcode {
 	 * @return object
 	 */
 	public static function get_instance() {
-
 		// If the single instance hasn't been set, set it now.
 		if ( null == self::$instance ) {
 			self::$instance = new self;
 		}
-
 		return self::$instance;
 	}
-
 }
 
 Cherry_Grid_Shortcode::get_instance();

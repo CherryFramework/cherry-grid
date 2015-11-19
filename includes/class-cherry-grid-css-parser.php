@@ -10,7 +10,7 @@
  */
 
 // If this file is called directly, abort.
-if ( !defined( 'WPINC' ) ) {
+if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
@@ -23,29 +23,46 @@ class Cherry_Grid_CSS_Parser {
 
 	/**
 	 * Parent CSS class
+	 *
+	 * @var string
 	 */
 	public $class = null;
 
 	/**
 	 * Path to CSS template file
+	 *
+	 * @var string
 	 */
 	public $template = null;
 
 	/**
 	 * Custom shortcode attributes
+	 *
+	 * @var array
 	 */
 	public $atts = array();
 
 	/**
 	 * Macros array to replace
+	 *
+	 * @var array
 	 */
 	public $macros = array();
 
 	/**
 	 * Parsed CSS
+	 *
+	 * @var string
 	 */
 	public $css = null;
 
+	/**
+	 * Constructor for the class
+	 *
+	 * @param string $class    parent CSS class name.
+	 * @param string $template path to template file.
+	 * @param array  $atts     shortcode attributes array.
+	 */
 	function __construct( $class, $template, $atts ) {
 
 		if ( ! $class || ! file_exists( $template ) || ! is_array( $atts ) ) {
@@ -62,7 +79,7 @@ class Cherry_Grid_CSS_Parser {
 			'bgcolor' => '',
 			'gutter'  => ! empty( $atts['gutter'] ) ? absint( $atts['gutter'] ) : 0,
 			'columns' => ! empty( $atts['columns'] ) ? absint( $atts['columns'] ) : 3,
-			'width'   => ! empty( $atts['initial_size'] ) ? absint( $atts['initial_size'] ) : 0
+			'width'   => ! empty( $atts['initial_size'] ) ? absint( $atts['initial_size'] ) : 0,
 		);
 
 		$template  = $this->get_template();
@@ -73,17 +90,24 @@ class Cherry_Grid_CSS_Parser {
 	/**
 	 * Get CSS template content
 	 *
-	 * @since 1.0.0
+	 * @since  1.0.0
+	 * @return string
 	 */
 	public function get_template() {
+
 		ob_start();
 		require $this->template;
 		$content = ob_get_clean();
+
 		return $content;
 	}
 
 	/**
 	 * Parse CSS template and reaplce macros
+	 *
+	 * @since  1.0.0
+	 * @param  string $content CSS template content.
+	 * @return string
 	 */
 	public function parse_template( $content ) {
 
@@ -98,17 +122,19 @@ class Cherry_Grid_CSS_Parser {
 	/**
 	 * Process founded matches and replace it with data
 	 *
-	 * @since 1.0.0
+	 * @since  1.0.0
+	 * @param  array $matches array with mathed values.
+	 * @return string
 	 */
 	public function replace_callback( $matches ) {
 
 		$result = '';
 
-		if ( !empty( $matches[3] ) && isset( $this->macros[$matches[1]] ) ) {
-			$result = absint( $this->macros[$matches[1]] ) * floatval( $matches[3] );
+		if ( ! empty( $matches[3] ) && isset( $this->macros[ $matches[1] ] ) ) {
+			$result = absint( $this->macros[ $matches[1] ] ) * floatval( $matches[3] );
 			$result = $this->maybe_fix_width( $result, $matches[1], absint( $matches[3] ) );
-		} elseif ( isset( $this->macros[$matches[1]] ) ) {
-			$result = esc_attr( $this->macros[$matches[1]] );
+		} elseif ( isset( $this->macros[ $matches[1] ] ) ) {
+			$result = esc_attr( $this->macros[ $matches[1] ] );
 		}
 
 		if ( isset( $matches[5] ) ) {
@@ -122,11 +148,12 @@ class Cherry_Grid_CSS_Parser {
 	/**
 	 * If it's width param - maybe fix it's on gutter value
 	 *
-	 * @since 1.0.0
+	 * @since  1.0.0
 	 *
-	 * @param int     $value   result value
-	 * @param string  $macros  macros
-	 * @param int     $factor  multiplier
+	 * @param  int    $value   result value.
+	 * @param  string $macros  macros.
+	 * @param  int    $factor  multiplier.
+	 * @return int
 	 */
 	public function maybe_fix_width( $value, $macros, $factor ) {
 
@@ -138,6 +165,4 @@ class Cherry_Grid_CSS_Parser {
 		return $value;
 
 	}
-
-
 }

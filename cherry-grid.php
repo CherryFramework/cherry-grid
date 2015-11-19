@@ -10,15 +10,20 @@
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Domain Path: /languages
+ *
+ * @package  Cherry Grid
+ * @category Core
+ * @author   Cherry Team
+ * @license  GPL-2.0+
  */
 
 // If this file is called directly, abort.
-if ( !defined( 'WPINC' ) ) {
+if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
 // If class 'Cherry_Grid' not exists.
-if ( !class_exists( 'Cherry_Grid' ) ) {
+if ( ! class_exists( 'Cherry_Grid' ) ) {
 
 	/**
 	 * Sets up and initializes the Cherry Team plugin.
@@ -49,7 +54,7 @@ if ( !class_exists( 'Cherry_Grid' ) ) {
 			add_action( 'plugins_loaded', array( $this, 'lang' ), 2 );
 
 			// Load public-facing style sheet and JavaScript.
-			add_action( 'wp_enqueue_scripts',         array( $this, 'assets' ), 20 );
+			add_action( 'wp_enqueue_scripts', array( $this, 'assets' ), 20 );
 			add_filter( 'cherry_compiler_static_css', array( $this, 'add_style_to_compiler' ) );
 
 			add_filter( 'body_class', array( $this, 'add_noflex_classes' ) );
@@ -134,8 +139,8 @@ if ( !class_exists( 'Cherry_Grid' ) ) {
 			$Cherry_Plugin_Update -> init( array(
 					'version'			=> CHERRY_GRID_VERSION,
 					'slug'				=> CHERRY_GRID_SLUG,
-					'repository_name'	=> CHERRY_GRID_SLUG
-			));
+					'repository_name'	=> CHERRY_GRID_SLUG,
+			) );
 		}
 
 		/**
@@ -144,10 +149,12 @@ if ( !class_exists( 'Cherry_Grid' ) ) {
 		 * @since 1.0.0
 		 */
 		public function assets() {
+
 			wp_enqueue_style(
 				'cherry-grid',
 				CHERRY_GRID_URI . 'assets/css/style.css', array(), CHERRY_GRID_VERSION
 			);
+
 			wp_register_script(
 				'cherry-grid',
 				CHERRY_GRID_URI . 'assets/js/min/script.min.js', array( 'jquery' ), CHERRY_GRID_VERSION, true
@@ -159,9 +166,11 @@ if ( !class_exists( 'Cherry_Grid' ) ) {
 		 *
 		 * @since  1.0.0
 		 *
-		 * @param  array $handles CSS handles to compile
+		 * @param  array $handles CSS handles to compile.
+		 * @return array
 		 */
 		function add_style_to_compiler( $handles ) {
+
 			$handles = array_merge(
 				array( 'cherry-grid' => plugins_url( 'assets/css/style.css', __FILE__ ) ),
 				$handles
@@ -176,7 +185,8 @@ if ( !class_exists( 'Cherry_Grid' ) ) {
 		 *
 		 * @since  1.0.0
 		 *
-		 * @param array $classes Array of existing body classes
+		 * @param  array $classes Array of existing body classes.
+		 * @return array
 		 */
 		function add_noflex_classes( $classes ) {
 
@@ -200,11 +210,10 @@ if ( !class_exists( 'Cherry_Grid' ) ) {
 		 * @return object
 		 */
 		public static function get_instance() {
-
 			// If the single instance hasn't been set, set it now.
-			if ( null == self::$instance )
+			if ( null == self::$instance ) {
 				self::$instance = new self;
-
+			}
 			return self::$instance;
 		}
 	}

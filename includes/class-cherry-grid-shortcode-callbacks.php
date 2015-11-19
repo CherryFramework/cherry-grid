@@ -10,7 +10,7 @@
  */
 
 // If this file is called directly, abort.
-if ( !defined( 'WPINC' ) ) {
+if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
@@ -39,6 +39,10 @@ class Cherry_Grid_Shortcode_Callbacks {
 	 */
 	public $grid_data = array();
 
+	/**
+	 * Constructor for the class
+	 * @param array $atts mixed query and shortcode attributes.
+	 */
 	function __construct( $atts ) {
 		$this->atts = $atts;
 	}
@@ -57,13 +61,16 @@ class Cherry_Grid_Shortcode_Callbacks {
 	/**
 	 * Get post meta
 	 *
-	 * @since 1.0.3
+	 * @since  1.0.3
+	 * @return string
 	 */
 	public function get_meta() {
+
 		if ( null == $this->grid_meta ) {
 			global $post;
 			$this->grid_meta = get_post_meta( $post->ID, '_cherry_grid', true );
 		}
+
 		return $this->grid_meta;
 	}
 
@@ -74,6 +81,7 @@ class Cherry_Grid_Shortcode_Callbacks {
 	 * @return string
 	 */
 	public function post_title() {
+
 		if ( ! isset( $this->grid_data['title'] ) ) {
 			$this->grid_data['title'] = get_the_title();
 		}
@@ -107,7 +115,9 @@ class Cherry_Grid_Shortcode_Callbacks {
 
 	/**
 	 * Get post title
+	 *
 	 * @since  1.0.0
+	 * @return string
 	 */
 	public function get_title() {
 		$format = '<h3 class="cherry-grid_title"><a href="%2$s">%1$s</a></h3>';
@@ -116,7 +126,9 @@ class Cherry_Grid_Shortcode_Callbacks {
 
 	/**
 	 * Get post title
+	 *
 	 * @since  1.0.0
+	 * @return string
 	 */
 	public function get_image() {
 
@@ -150,7 +162,9 @@ class Cherry_Grid_Shortcode_Callbacks {
 
 	/**
 	 * Get post author link
+	 *
 	 * @since  1.0.0
+	 * @return string
 	 */
 	public function get_author() {
 
@@ -164,7 +178,10 @@ class Cherry_Grid_Shortcode_Callbacks {
 
 	/**
 	 * Get post publishing date
+	 *
 	 * @since  1.0.0
+	 * @param  string $date_format PHP-like date format.
+	 * @return string
 	 */
 	public function get_date( $date_format = null ) {
 
@@ -182,7 +199,9 @@ class Cherry_Grid_Shortcode_Callbacks {
 
 	/**
 	 * Get post comments
-	 * @since 1.0.0
+	 *
+	 * @since  1.0.0
+	 * @return string
 	 */
 	public function get_comments() {
 
@@ -209,7 +228,9 @@ class Cherry_Grid_Shortcode_Callbacks {
 
 	/**
 	 * Get post exerpt
-	 * @since 1.0.0
+	 *
+	 * @since  1.0.0
+	 * @return string
 	 */
 	public function get_excerpt() {
 
@@ -242,7 +263,9 @@ class Cherry_Grid_Shortcode_Callbacks {
 
 	/**
 	 * Get post content
+	 *
 	 * @since  1.0.0
+	 * @return string
 	 */
 	public function get_content() {
 
@@ -259,7 +282,9 @@ class Cherry_Grid_Shortcode_Callbacks {
 
 	/**
 	 * Get read more button
+	 *
 	 * @since  1.0.0
+	 * @return string
 	 */
 	public function get_button( $class = 'cherry-btn cherry-btn-primary' ) {
 
@@ -271,5 +296,4 @@ class Cherry_Grid_Shortcode_Callbacks {
 		return sprintf( $format, $text, $url, $class );
 
 	}
-
 }
