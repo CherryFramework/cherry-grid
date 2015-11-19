@@ -105,7 +105,8 @@ class Cherry_Grid_Shortcode_Callbacks {
 	 * Get post terms by taxonomy name
 	 *
 	 * @since  1.0.0
-	 * @param  string $taxonomy taxonomy name to get it
+	 * @param  string $taxonomy taxonomy name to get it.
+	 * @return array
 	 */
 	public function get_tax( $taxonomy = 'category' ) {
 		global $post;

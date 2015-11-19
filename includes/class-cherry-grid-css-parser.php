@@ -161,7 +161,7 @@ class Cherry_Grid_CSS_Parser {
 			return $value;
 		}
 
-		$value = $value + ($this->macros['gutter']* ( $factor - 1 ) );
+		$value = $value + ( $this->macros['gutter'] * ( $factor - 1 ) );
 		return $value;
 
 	}

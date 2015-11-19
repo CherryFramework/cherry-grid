@@ -14,6 +14,9 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+/**
+ * Define grid shortcode and register it for generator and template editor
+ */
 class Cherry_Grid_Shortcode {
 
 	/**
@@ -260,11 +263,11 @@ class Cherry_Grid_Shortcode {
 		$key = strtolower( $matches[1] );
 
 		// if key not found in data -return nothing
-		if ( ! isset( $this->grid_data[$key] ) ) {
+		if ( ! isset( $this->grid_data[ $key ] ) ) {
 			return '';
 		}
 
-		$callback = $this->grid_data[$key];
+		$callback = $this->grid_data[ $key ];
 
 		if ( ! is_callable( $callback ) ) {
 			return;
@@ -283,7 +286,7 @@ class Cherry_Grid_Shortcode {
 	 * Sanitize shortcode attributes
 	 *
 	 * @since  1.0.0
-	 * @param  array $atts shortcode attributes array
+	 * @param  array $atts shortcode attributes array.
 	 * @return array|null
 	 */
 	function sanitize_atts( $atts ) {
@@ -437,11 +440,11 @@ class Cherry_Grid_Shortcode {
 	}
 
 	/**
-	 * regiter template directory for template editor to search .tmpl files in
+	 * Regiter template directory for template editor to search .tmpl files in
 	 *
 	 * @since  1.0.0
 	 *
-	 * @param  array $dir default driectories array.
+	 * @param  array $dirs default driectories array.
 	 * @return array registered directories for editor
 	 */
 	function register_template_dir( $dirs ) {

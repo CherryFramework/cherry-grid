@@ -9,6 +9,9 @@
  * @copyright 2015 Cherry Team
  */
 
+/**
+ * Define metabox on edit post screen
+ */
 class Cherry_Grid_Meta_Boxes {
 
 	/**
@@ -208,9 +211,10 @@ class Cherry_Grid_Meta_Boxes {
 	/**
 	 * Save the meta when the post is saved.
 	 *
-	 * @since 1.0.0
-	 * @param int    $post_id
-	 * @param object $post
+	 * @since  1.0.0
+	 * @param  int    $post_id current post ID.
+	 * @param  object $post    current post object.
+	 * @return
 	 */
 	public function save_post( $post_id, $post ) {
 
@@ -268,8 +272,8 @@ class Cherry_Grid_Meta_Boxes {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @param  string $value array value.
 	 * @param  string $key   array key.
+	 * @param  string $value array value.
 	 * @return string
 	 */
 	public function sanitize_meta( $key, $value ) {

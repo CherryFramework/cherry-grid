@@ -114,7 +114,7 @@ if ( ! class_exists( 'Cherry_Grid' ) ) {
 		 * @since 1.0.0
 		 */
 		function includes() {
-			require_once ( CHERRY_GRID_DIR . 'includes/class-cherry-grid-shortcode.php' );
+			require_once( CHERRY_GRID_DIR . 'includes/class-cherry-grid-shortcode.php' );
 		}
 
 		/**
@@ -192,7 +192,7 @@ if ( ! class_exists( 'Cherry_Grid' ) ) {
 
 			global $is_IE;
 
-			if( ! $is_IE || ! preg_match( '/MSIE [56789]/', $_SERVER['HTTP_USER_AGENT'] ) ) {
+			if ( ! $is_IE || ! preg_match( '/MSIE [56789]/', $_SERVER['HTTP_USER_AGENT'] ) ) {
 				return $classes;
 			}
 
