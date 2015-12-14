@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cherry-grid\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-30 13:01+0200\n"
-"PO-Revision-Date: 2015-10-30 13:01+0200\n"
+"POT-Creation-Date: 2015-12-14 10:18+0200\n"
+"PO-Revision-Date: 2015-12-14 10:18+0200\n"
 "Last-Translator: J.L.Dokter <jldokter@gmail.com>\n"
 "Language-Team: Cherry Team <support@cherryframework.com>\n"
 "Language: pl_PL\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.7.6\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: _e;__;_n:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;"
 "_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
@@ -20,150 +20,193 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
+#: admin/includes/class-cherry-grid-metabox.php:72
 #: includes/admin/class-cherry-grid-metabox.php:60
 msgid "Grid Options"
-msgstr ""
+msgstr "Opcje siatki"
 
+#: admin/includes/class-cherry-grid-metabox.php:80
 #: includes/admin/class-cherry-grid-metabox.php:68
 msgid "Width"
 msgstr "Szerokość"
 
+#: admin/includes/class-cherry-grid-metabox.php:94
 #: includes/admin/class-cherry-grid-metabox.php:82
 msgid "Show with image"
-msgstr ""
+msgstr "Pokaż ze zdjęciem"
 
+#: admin/includes/class-cherry-grid-metabox.php:99
 #: includes/admin/class-cherry-grid-metabox.php:87
 msgid "Yes"
 msgstr "Tak"
 
+#: admin/includes/class-cherry-grid-metabox.php:100
 #: includes/admin/class-cherry-grid-metabox.php:88
 msgid "No"
 msgstr "Nie"
 
+#: admin/includes/class-cherry-grid-metabox.php:106
 #: includes/admin/class-cherry-grid-metabox.php:94
 msgid "Excerpt length"
-msgstr ""
+msgstr "Długość fragmentu"
 
+#: admin/includes/class-cherry-grid-metabox.php:114
 #: includes/admin/class-cherry-grid-metabox.php:102
 msgid "Item background color"
-msgstr ""
+msgstr "Kolor tła elementu"
 
+#: admin/includes/class-cherry-grid-metabox.php:121
 #: includes/admin/class-cherry-grid-metabox.php:109
 msgid "Item text color"
-msgstr ""
+msgstr "Kolor tekstu elementu"
 
+#: admin/includes/class-cherry-grid-metabox.php:128
 #: includes/admin/class-cherry-grid-metabox.php:116
 msgid "CSS class for post item"
-msgstr ""
+msgstr "Klasa CSS dla elementu wpisu"
 
 #: includes/class-cherry-grid-shortcode.php:63
 #: includes/class-cherry-grid-shortcode.php:401
+#: public/includes/class-cherry-grid-shortcode.php:70
+#: public/includes/class-cherry-grid-shortcode.php:415
 msgid "Read More"
-msgstr ""
+msgstr "Więcej informacji"
 
 #: includes/class-cherry-grid-shortcode.php:97
+#: public/includes/class-cherry-grid-shortcode.php:106
 msgid "There are no posts found"
-msgstr ""
+msgstr "Nie znaleziono wpisów"
 
 #: includes/class-cherry-grid-shortcode.php:116
+#: public/includes/class-cherry-grid-shortcode.php:125
 msgid "Template file does not exist"
-msgstr ""
+msgstr "Plik szablonu nie istnieje"
 
 #: includes/class-cherry-grid-shortcode.php:336
+#: public/includes/class-cherry-grid-shortcode.php:350
 msgid "Grid"
-msgstr ""
+msgstr "Siatka"
 
 #: includes/class-cherry-grid-shortcode.php:343
+#: public/includes/class-cherry-grid-shortcode.php:357
 msgid "Number of posts"
-msgstr ""
+msgstr "Liczba wpisów"
 
 #: includes/class-cherry-grid-shortcode.php:344
+#: public/includes/class-cherry-grid-shortcode.php:358
 msgid "Set number of posts to show"
-msgstr ""
+msgstr "Ukaż liczbę wpisów do wyświetlania"
 
 #: includes/class-cherry-grid-shortcode.php:349
+#: public/includes/class-cherry-grid-shortcode.php:363
 msgid "Post type"
 msgstr "Rodzaj wpisu"
 
 #: includes/class-cherry-grid-shortcode.php:350
+#: public/includes/class-cherry-grid-shortcode.php:364
 msgid "Select post type to get posts from"
-msgstr ""
+msgstr "Wybierz typ wpisu, w celu otrzymywania postów"
 
 #: includes/class-cherry-grid-shortcode.php:356
+#: public/includes/class-cherry-grid-shortcode.php:370
 msgid "Grid layout"
-msgstr ""
+msgstr "Układ siatki"
 
 #: includes/class-cherry-grid-shortcode.php:357
+#: public/includes/class-cherry-grid-shortcode.php:371
 msgid "Select grid layout type"
-msgstr ""
+msgstr "Wybierz typ układu siatki"
 
 #: includes/class-cherry-grid-shortcode.php:359
+#: public/includes/class-cherry-grid-shortcode.php:373
 msgid "Rows"
-msgstr ""
+msgstr "Wiersze"
 
 #: includes/class-cherry-grid-shortcode.php:360
+#: public/includes/class-cherry-grid-shortcode.php:374
 msgid "Columns"
-msgstr ""
+msgstr "Kolumny"
 
 #: includes/class-cherry-grid-shortcode.php:361
+#: public/includes/class-cherry-grid-shortcode.php:375
 msgid "Masonry"
-msgstr ""
+msgstr "Biblioteka siatkowego układu Java Skrypt-u"
 
 #: includes/class-cherry-grid-shortcode.php:370
+#: public/includes/class-cherry-grid-shortcode.php:384
 msgid "Gutter Width"
-msgstr ""
+msgstr "Szerokość przedziału"
 
 #: includes/class-cherry-grid-shortcode.php:371
+#: public/includes/class-cherry-grid-shortcode.php:385
 msgid "Set gutter width (in px)"
-msgstr ""
+msgstr "Ustaw szerokość przedziału (w px)"
 
 #: includes/class-cherry-grid-shortcode.php:379
+#: public/includes/class-cherry-grid-shortcode.php:393
 msgid "Columns number"
-msgstr ""
+msgstr "Liczba kolumn"
 
 #: includes/class-cherry-grid-shortcode.php:380
+#: public/includes/class-cherry-grid-shortcode.php:394
 msgid "Set columns number (has effect only for columns layout type)"
-msgstr ""
+msgstr "Ustaw liczbę kolumn (jest dostępny tylko dla typu układu kolumnowego)"
 
 #: includes/class-cherry-grid-shortcode.php:388
+#: public/includes/class-cherry-grid-shortcode.php:402
 msgid "Initial item width"
-msgstr ""
+msgstr "Początkowa szerokość elementu"
 
 #: includes/class-cherry-grid-shortcode.php:389
+#: public/includes/class-cherry-grid-shortcode.php:403
 msgid "Set initial item width"
-msgstr ""
+msgstr "Ustaw początkową szerokość elementu"
 
 #: includes/class-cherry-grid-shortcode.php:397
+#: public/includes/class-cherry-grid-shortcode.php:411
 msgid "Thumbnail size"
-msgstr ""
+msgstr "Rozmiar miniaturki"
 
 #: includes/class-cherry-grid-shortcode.php:398
+#: public/includes/class-cherry-grid-shortcode.php:412
 msgid "Set post thumbnail size to show"
-msgstr ""
+msgstr "Ustaw rozmiar miniaturki wpisu dla wyświetlania"
 
 #: includes/class-cherry-grid-shortcode.php:402
+#: public/includes/class-cherry-grid-shortcode.php:416
 msgid "Read more button text"
-msgstr ""
+msgstr "Tekst przycisku Więcej informacji"
 
 #: includes/class-cherry-grid-shortcode.php:403
+#: public/includes/class-cherry-grid-shortcode.php:417
 msgid "Enter text for read more button"
-msgstr ""
+msgstr "Wprowadź tekst dla przycisku Więcej informacji"
 
 #: includes/class-cherry-grid-shortcode.php:407
-msgid "Class"
-msgstr "Klasa"
+msgid "Custom CSS class"
+msgstr ""
 
 #: includes/class-cherry-grid-shortcode.php:408
-msgid "Extra CSS class"
-msgstr "Dodatkowa klasa CSS"
+msgid "Enter custom CSS class name"
+msgstr ""
 
 #: includes/class-cherry-grid-shortcode.php:416
+#: public/includes/class-cherry-grid-shortcode.php:430
 msgid "Template"
 msgstr "Szablon"
 
 #: includes/class-cherry-grid-shortcode.php:417
+#: public/includes/class-cherry-grid-shortcode.php:431
 msgid "Shortcode template"
-msgstr ""
+msgstr "Szablon shortcode-u"
+
+#: public/includes/class-cherry-grid-shortcode.php:421
+msgid "Class"
+msgstr "Klasa"
+
+#: public/includes/class-cherry-grid-shortcode.php:422
+msgid "Extra CSS class"
+msgstr "Dodatkowa klasa CSS"
 
 #~ msgid "or"
 #~ msgstr "albo"

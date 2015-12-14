@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cherry-grid\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-30 13:01+0200\n"
-"PO-Revision-Date: 2015-10-30 13:01+0200\n"
+"POT-Creation-Date: 2015-12-14 10:18+0200\n"
+"PO-Revision-Date: 2015-12-14 10:19+0200\n"
 "Last-Translator: J.L.Dokter <jldokter@gmail.com>\n"
 "Language-Team: Cherry Team <support@cherryframework.com>\n"
 "Language: sk_SK\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.7.6\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: _e;__;_n:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;"
 "_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
@@ -20,150 +20,193 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: ../includes/admin/class-cherry-grid-metabox.php:60
+#: admin/includes/class-cherry-grid-metabox.php:72
+#: includes/admin/class-cherry-grid-metabox.php:60
 msgid "Grid Options"
 msgstr ""
 
-#: ../includes/admin/class-cherry-grid-metabox.php:68
+#: admin/includes/class-cherry-grid-metabox.php:80
+#: includes/admin/class-cherry-grid-metabox.php:68
 msgid "Width"
 msgstr "Šírka"
 
-#: ../includes/admin/class-cherry-grid-metabox.php:82
+#: admin/includes/class-cherry-grid-metabox.php:94
+#: includes/admin/class-cherry-grid-metabox.php:82
 msgid "Show with image"
 msgstr ""
 
-#: ../includes/admin/class-cherry-grid-metabox.php:87
+#: admin/includes/class-cherry-grid-metabox.php:99
+#: includes/admin/class-cherry-grid-metabox.php:87
 msgid "Yes"
 msgstr "Áno"
 
-#: ../includes/admin/class-cherry-grid-metabox.php:88
+#: admin/includes/class-cherry-grid-metabox.php:100
+#: includes/admin/class-cherry-grid-metabox.php:88
 msgid "No"
 msgstr "Nie"
 
-#: ../includes/admin/class-cherry-grid-metabox.php:94
+#: admin/includes/class-cherry-grid-metabox.php:106
+#: includes/admin/class-cherry-grid-metabox.php:94
 msgid "Excerpt length"
 msgstr ""
 
-#: ../includes/admin/class-cherry-grid-metabox.php:102
+#: admin/includes/class-cherry-grid-metabox.php:114
+#: includes/admin/class-cherry-grid-metabox.php:102
 msgid "Item background color"
 msgstr ""
 
-#: ../includes/admin/class-cherry-grid-metabox.php:109
+#: admin/includes/class-cherry-grid-metabox.php:121
+#: includes/admin/class-cherry-grid-metabox.php:109
 msgid "Item text color"
 msgstr ""
 
-#: ../includes/admin/class-cherry-grid-metabox.php:116
+#: admin/includes/class-cherry-grid-metabox.php:128
+#: includes/admin/class-cherry-grid-metabox.php:116
 msgid "CSS class for post item"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:63
-#: ../includes/class-cherry-grid-shortcode.php:401
+#: includes/class-cherry-grid-shortcode.php:63
+#: includes/class-cherry-grid-shortcode.php:401
+#: public/includes/class-cherry-grid-shortcode.php:70
+#: public/includes/class-cherry-grid-shortcode.php:415
 msgid "Read More"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:97
+#: includes/class-cherry-grid-shortcode.php:97
+#: public/includes/class-cherry-grid-shortcode.php:106
 msgid "There are no posts found"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:116
+#: includes/class-cherry-grid-shortcode.php:116
+#: public/includes/class-cherry-grid-shortcode.php:125
 msgid "Template file does not exist"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:336
+#: includes/class-cherry-grid-shortcode.php:336
+#: public/includes/class-cherry-grid-shortcode.php:350
 msgid "Grid"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:343
+#: includes/class-cherry-grid-shortcode.php:343
+#: public/includes/class-cherry-grid-shortcode.php:357
 msgid "Number of posts"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:344
+#: includes/class-cherry-grid-shortcode.php:344
+#: public/includes/class-cherry-grid-shortcode.php:358
 msgid "Set number of posts to show"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:349
+#: includes/class-cherry-grid-shortcode.php:349
+#: public/includes/class-cherry-grid-shortcode.php:363
 msgid "Post type"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:350
+#: includes/class-cherry-grid-shortcode.php:350
+#: public/includes/class-cherry-grid-shortcode.php:364
 msgid "Select post type to get posts from"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:356
+#: includes/class-cherry-grid-shortcode.php:356
+#: public/includes/class-cherry-grid-shortcode.php:370
 msgid "Grid layout"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:357
+#: includes/class-cherry-grid-shortcode.php:357
+#: public/includes/class-cherry-grid-shortcode.php:371
 msgid "Select grid layout type"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:359
+#: includes/class-cherry-grid-shortcode.php:359
+#: public/includes/class-cherry-grid-shortcode.php:373
 msgid "Rows"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:360
+#: includes/class-cherry-grid-shortcode.php:360
+#: public/includes/class-cherry-grid-shortcode.php:374
 msgid "Columns"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:361
+#: includes/class-cherry-grid-shortcode.php:361
+#: public/includes/class-cherry-grid-shortcode.php:375
 msgid "Masonry"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:370
+#: includes/class-cherry-grid-shortcode.php:370
+#: public/includes/class-cherry-grid-shortcode.php:384
 msgid "Gutter Width"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:371
+#: includes/class-cherry-grid-shortcode.php:371
+#: public/includes/class-cherry-grid-shortcode.php:385
 msgid "Set gutter width (in px)"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:379
+#: includes/class-cherry-grid-shortcode.php:379
+#: public/includes/class-cherry-grid-shortcode.php:393
 msgid "Columns number"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:380
+#: includes/class-cherry-grid-shortcode.php:380
+#: public/includes/class-cherry-grid-shortcode.php:394
 msgid "Set columns number (has effect only for columns layout type)"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:388
+#: includes/class-cherry-grid-shortcode.php:388
+#: public/includes/class-cherry-grid-shortcode.php:402
 msgid "Initial item width"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:389
+#: includes/class-cherry-grid-shortcode.php:389
+#: public/includes/class-cherry-grid-shortcode.php:403
 msgid "Set initial item width"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:397
+#: includes/class-cherry-grid-shortcode.php:397
+#: public/includes/class-cherry-grid-shortcode.php:411
 msgid "Thumbnail size"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:398
+#: includes/class-cherry-grid-shortcode.php:398
+#: public/includes/class-cherry-grid-shortcode.php:412
 msgid "Set post thumbnail size to show"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:402
+#: includes/class-cherry-grid-shortcode.php:402
+#: public/includes/class-cherry-grid-shortcode.php:416
 msgid "Read more button text"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:403
+#: includes/class-cherry-grid-shortcode.php:403
+#: public/includes/class-cherry-grid-shortcode.php:417
 msgid "Enter text for read more button"
 msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:407
-msgid "Class"
-msgstr "Trieda"
+#: includes/class-cherry-grid-shortcode.php:407
+msgid "Custom CSS class"
+msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:408
-msgid "Extra CSS class"
-msgstr "Extra CSS trieda"
+#: includes/class-cherry-grid-shortcode.php:408
+msgid "Enter custom CSS class name"
+msgstr ""
 
-#: ../includes/class-cherry-grid-shortcode.php:416
+#: includes/class-cherry-grid-shortcode.php:416
+#: public/includes/class-cherry-grid-shortcode.php:430
 msgid "Template"
 msgstr "Šablóna"
 
-#: ../includes/class-cherry-grid-shortcode.php:417
+#: includes/class-cherry-grid-shortcode.php:417
+#: public/includes/class-cherry-grid-shortcode.php:431
 msgid "Shortcode template"
 msgstr ""
+
+#: public/includes/class-cherry-grid-shortcode.php:421
+msgid "Class"
+msgstr "Trieda"
+
+#: public/includes/class-cherry-grid-shortcode.php:422
+msgid "Extra CSS class"
+msgstr "Extra CSS trieda"
 
 #~ msgid "Upload"
 #~ msgstr "Nahrať"
@@ -372,14 +415,19 @@ msgstr ""
 #~ msgid "Posts per page"
 #~ msgstr "Príspevkov na stránku"
 
-#~ msgid "Specify number of posts that you want to show. Enter -1 to get all posts"
-#~ msgstr "Špecifikujte počet príspekov, ktoré chcete zobraziť. Zadajte -1 ak chcete zobraziť všetky príspevky"
+#~ msgid ""
+#~ "Specify number of posts that you want to show. Enter -1 to get all posts"
+#~ msgstr ""
+#~ "Špecifikujte počet príspekov, ktoré chcete zobraziť. Zadajte -1 ak chcete "
+#~ "zobraziť všetky príspevky"
 
 #~ msgid "Post types"
 #~ msgstr "Typy príspevkov"
 
 #~ msgid "Select post types. Hold Ctrl key to select multiple post types"
-#~ msgstr "Zvoľte typy príspevkov. Stlačte a držte tlačidllo CTRL na klávesnici ak chcete vybrať viac typov príspevkov"
+#~ msgstr ""
+#~ "Zvoľte typy príspevkov. Stlačte a držte tlačidllo CTRL na klávesnici ak "
+#~ "chcete vybrať viac typov príspevkov"
 
 #~ msgid "Taxonomy"
 #~ msgstr "Taxonómia"
@@ -400,7 +448,9 @@ msgstr ""
 #~ msgstr "Autori"
 
 #~ msgid "Specify offset to start posts loop not from first post"
-#~ msgstr "Špecifikujte odsadenie pre začatie slučky príspevkov nie z prvého príspevku"
+#~ msgstr ""
+#~ "Špecifikujte odsadenie pre začatie slučky príspevkov nie z prvého "
+#~ "príspevku"
 
 #~ msgid "Post parent"
 #~ msgstr "Rodič príspevku"
@@ -576,7 +626,9 @@ msgstr ""
 #~ msgid "Restore default settings"
 #~ msgstr "Obnoviť predvolené nastavenia"
 
-#~ msgid "For full functionality of this page it is reccomended to enable javascript."
+#~ msgid ""
+#~ "For full functionality of this page it is reccomended to enable "
+#~ "javascript."
 #~ msgstr "Pre plnú funkčnosť tejto stránky je odporúčané povoliť JavaScript."
 
 #~ msgid "Settings saved successfully"
@@ -588,8 +640,14 @@ msgstr ""
 #~ msgid "Title:"
 #~ msgstr "Názov:"
 
-#~ msgid "IN - posts that have any of selected categories terms<br/>NOT IN - posts that is does not have any of selected terms<br/>AND - posts that have all selected terms"
-#~ msgstr "IN - príspevky, ktoré majú niektorú z vybraných podmienok kategórií<br/>NOT IN - príspevky, ktoré nemajú žiadnu z vybraných podmienok<br/>AND - príspevky, ktoré majú všetky zvolené podmienky"
+#~ msgid ""
+#~ "IN - posts that have any of selected categories terms<br/>NOT IN - posts "
+#~ "that is does not have any of selected terms<br/>AND - posts that have all "
+#~ "selected terms"
+#~ msgstr ""
+#~ "IN - príspevky, ktoré majú niektorú z vybraných podmienok kategórií<br/"
+#~ ">NOT IN - príspevky, ktoré nemajú žiadnu z vybraných podmienok<br/>AND - "
+#~ "príspevky, ktoré majú všetky zvolené podmienky"
 
 #~ msgid "Show childrens of entered post (enter post ID)"
 #~ msgstr "Zobraziť podradené príspevky (zadajte ID príspevku)"
@@ -609,8 +667,12 @@ msgstr ""
 #~ msgid "Styled heading 2"
 #~ msgstr "Štýlovaná nadpis 2. úrovne"
 
-#~ msgid "This shortcode doesn't work in live preview. Please insert it into editor and preview on the site."
-#~ msgstr "Tento skrátený kód nefunguje v živom náhľade. Prosím vložte ho do editora a pozrite výsledok na stránke."
+#~ msgid ""
+#~ "This shortcode doesn't work in live preview. Please insert it into editor "
+#~ "and preview on the site."
+#~ msgstr ""
+#~ "Tento skrátený kód nefunguje v živom náhľade. Prosím vložte ho do editora "
+#~ "a pozrite výsledok na stránke."
 
 #~ msgid "Gallery"
 #~ msgstr "Galéria"
@@ -784,7 +846,8 @@ msgstr ""
 #~ msgstr "Päť šestín"
 
 #~ msgid "Select column width. This width will be calculated depend page width"
-#~ msgstr "Zvoľte šírku stĺpca. Táto šírka sa vypočíta v závislosti od šírky stránky"
+#~ msgstr ""
+#~ "Zvoľte šírku stĺpca. Táto šírka sa vypočíta v závislosti od šírky stránky"
 
 #~ msgid "Star"
 #~ msgstr "Hviezda"
@@ -877,11 +940,22 @@ msgstr ""
 #~ msgid "Radius"
 #~ msgstr "Zaoblenie"
 
-#~ msgid "Radius of button corners. Auto-radius calculation based on button size"
-#~ msgstr "Zaoblenia rohov tlačidiel. Automatické zaoblenie sa vypočítava v závislosti od veľkosti tlačidla"
+#~ msgid ""
+#~ "Radius of button corners. Auto-radius calculation based on button size"
+#~ msgstr ""
+#~ "Zaoblenia rohov tlačidiel. Automatické zaoblenie sa vypočítava v "
+#~ "závislosti od veľkosti tlačidla"
 
-#~ msgid "You can upload custom icon for this button. Try to begin with <a href=\"http://webdesign.tutsplus.com/freebies/icons-freebies/exclusive-freebie-50-crisp-web-app-icons/\" target=\"_blank\">these free high-quality icons</a>. Download archive, unpack icons and upload in this field"
-#~ msgstr "Môžete nahrať vlastnú ikonu pre toto tlačidlo. Skúste začať s <a href=\"http://webdesign.tutsplus.com/freebies/icons-freebies/exclusive-freebie-50-crisp-web-app-icons/\" target=\"_blank\">týmito ikonami vo vysokej kvalite</a>. Stiahnite archív, rozbaľte ikony a nahrajte ich sem"
+#~ msgid ""
+#~ "You can upload custom icon for this button. Try to begin with <a href="
+#~ "\"http://webdesign.tutsplus.com/freebies/icons-freebies/exclusive-"
+#~ "freebie-50-crisp-web-app-icons/\" target=\"_blank\">these free high-"
+#~ "quality icons</a>. Download archive, unpack icons and upload in this field"
+#~ msgstr ""
+#~ "Môžete nahrať vlastnú ikonu pre toto tlačidlo. Skúste začať s <a href="
+#~ "\"http://webdesign.tutsplus.com/freebies/icons-freebies/exclusive-"
+#~ "freebie-50-crisp-web-app-icons/\" target=\"_blank\">týmito ikonami vo "
+#~ "vysokej kvalite</a>. Stiahnite archív, rozbaľte ikony a nahrajte ich sem"
 
 #~ msgid "Dark"
 #~ msgstr "Tmavé"
@@ -910,7 +984,9 @@ msgstr ""
 #~ msgid "Position of button text shadow"
 #~ msgstr "Pozícia tieňu na tlačidle"
 
-#~ msgid "Small description under button text. This option is incompatible with icon."
+#~ msgid ""
+#~ "Small description under button text. This option is incompatible with "
+#~ "icon."
 #~ msgstr "Malý popis pod textom tlačidla. Táto možnosť nefunguje s ikonou."
 
 #~ msgid "Service"
@@ -991,8 +1067,22 @@ msgstr ""
 #~ msgid "Content source"
 #~ msgstr "Zdroj obsahu"
 
-#~ msgid "Insert here URL or CSS selector. Use URL for Iframe and Image content types. Use CSS selector for Inline content type.<br />Example values:<br /><b%value>http://www.youtube.com/watch?v=NbE8INOjTKM</b> - YouTube video (iframe)<br /><b%value>http://example.com/wp-content/uploads/image.jpg</b> - uploaded image (image)<br /><b%value>http://example.com/</b> - any web page (iframe)<br /><b%value>#contact-form</b> - any HTML content (inline)"
-#~ msgstr "Sem vložte adresu URL alebo selektoru CSS. Použite URL adresu pre Iframe a typy obsahov obrázkov. Použite CSS selektor pre Inline typy obsahov.<br />Príklady hodnôt:<br /><b%value>http://www.youtube.com/watch?v=NbE8INOjTKM</b> - YouTube video (iframe)<br /><b%value>http://example.com/wp-content/uploads/image.jpg</b> - nahraná obrázok (obrázok)<br /><b%value>http://priklad.sk</b> - akákoľvek webstránka (iframe)<br /><b%value>#contact-form</b> - akýkoľvek HTML obsah (inline)"
+#~ msgid ""
+#~ "Insert here URL or CSS selector. Use URL for Iframe and Image content "
+#~ "types. Use CSS selector for Inline content type.<br />Example values:<br /"
+#~ "><b%value>http://www.youtube.com/watch?v=NbE8INOjTKM</b> - YouTube video "
+#~ "(iframe)<br /><b%value>http://example.com/wp-content/uploads/image.jpg</"
+#~ "b> - uploaded image (image)<br /><b%value>http://example.com/</b> - any "
+#~ "web page (iframe)<br /><b%value>#contact-form</b> - any HTML content "
+#~ "(inline)"
+#~ msgstr ""
+#~ "Sem vložte adresu URL alebo selektoru CSS. Použite URL adresu pre Iframe "
+#~ "a typy obsahov obrázkov. Použite CSS selektor pre Inline typy obsahov."
+#~ "<br />Príklady hodnôt:<br /><b%value>http://www.youtube.com/watch?"
+#~ "v=NbE8INOjTKM</b> - YouTube video (iframe)<br /><b%value>http://example."
+#~ "com/wp-content/uploads/image.jpg</b> - nahraná obrázok (obrázok)<br /><b"
+#~ "%value>http://priklad.sk</b> - akákoľvek webstránka (iframe)<br /><b"
+#~ "%value>#contact-form</b> - akýkoľvek HTML obsah (inline)"
 
 #~ msgid "[button] Click Here to Watch the Video [/button]"
 #~ msgstr "[button] Kliknite pre zhliadnutie videa [/button]"
@@ -1015,8 +1105,10 @@ msgstr ""
 #~ msgid "Url"
 #~ msgstr "URL"
 
-#~ msgid "Url of YouTube page with video. Ex: http://youtube.com/watch?v=XXXXXX"
-#~ msgstr "URL adresa YouTube videa. Napríklad: http://youtube.com/watch?v=XXXXXX"
+#~ msgid ""
+#~ "Url of YouTube page with video. Ex: http://youtube.com/watch?v=XXXXXX"
+#~ msgstr ""
+#~ "URL adresa YouTube videa. Napríklad: http://youtube.com/watch?v=XXXXXX"
 
 #~ msgid "Player width"
 #~ msgstr "Šírka prehliadača"
@@ -1028,7 +1120,8 @@ msgstr ""
 #~ msgstr "Prispôsobiteľnosť/responzivita"
 
 #~ msgid "Ignore width and height parameters and make player responsive"
-#~ msgstr "Ignorovať parametre šírky a výšky a spraviť prehrávač prispôsobiteľný"
+#~ msgstr ""
+#~ "Ignorovať parametre šírky a výšky a spraviť prehrávač prispôsobiteľný"
 
 #~ msgid "Autoplay"
 #~ msgstr "Automatické spustenie"
@@ -1057,8 +1150,12 @@ msgstr ""
 #~ msgid "Audio file url. Supported formats: mp3, ogg"
 #~ msgstr "URL adresa audio súboru. Podporované formáty: mp3, ogg"
 
-#~ msgid "Player width. You can specify width in percents and player will be responsive. Example values: <b%value>200px</b>, <b%value>100&#37;</b>"
-#~ msgstr "Šírka prehrávača. Môžete špecifikovať šírku v percentáých a prehrávač bude prispôsobiteľný. Napríklad: <b%value>200px</b>, <b%value>100&#37;</b>"
+#~ msgid ""
+#~ "Player width. You can specify width in percents and player will be "
+#~ "responsive. Example values: <b%value>200px</b>, <b%value>100&#37;</b>"
+#~ msgstr ""
+#~ "Šírka prehrávača. Môžete špecifikovať šírku v percentáých a prehrávač "
+#~ "bude prispôsobiteľný. Napríklad: <b%value>200px</b>, <b%value>100&#37;</b>"
 
 #~ msgid "Play file automatically when page is loaded"
 #~ msgstr "Prehrať súbor automaticky pri načítaní stránky"
@@ -1085,7 +1182,8 @@ msgstr ""
 #~ msgstr "Názov prehrávača"
 
 #~ msgid "Show player controls (play/pause etc.) or not"
-#~ msgstr "Zobraziť ovládacie tlačidla prehrávača (prehrať/pauza atď.) alebo nie"
+#~ msgstr ""
+#~ "Zobraziť ovládacie tlačidla prehrávača (prehrať/pauza atď.) alebo nie"
 
 #~ msgid "Custom video player"
 #~ msgstr "Vlastný video prehrávač"
@@ -1213,7 +1311,9 @@ msgstr ""
 #~ msgstr "Rodičovské ID"
 
 #~ msgid "ID of the parent page. Leave blank to use current page"
-#~ msgstr "ID nadradenej rodičovskej stránky. Nechajte prázdne pre použitie aktuálnej stránky"
+#~ msgstr ""
+#~ "ID nadradenej rodičovskej stránky. Nechajte prázdne pre použitie "
+#~ "aktuálnej stránky"
 
 #~ msgid "List of sub pages"
 #~ msgstr "Zoznam podstránok"
@@ -1240,7 +1340,8 @@ msgstr ""
 #~ msgstr "Výška prehliadača"
 
 #~ msgid "Ignore width and height parameters and make viewer responsive"
-#~ msgstr "Ignorovať parametre šírky a výšky a spraviť prehliadač prispôsobiteľný"
+#~ msgstr ""
+#~ "Ignorovať parametre šírky a výšky a spraviť prehliadač prispôsobiteľný"
 
 #~ msgid "Document viewer by Google"
 #~ msgstr "Prehliadač dokumentov Google"
@@ -1276,7 +1377,8 @@ msgstr ""
 #~ msgstr "Výška posuvníka (v pixeloch)"
 
 #~ msgid "Ignore width and height parameters and make slider responsive"
-#~ msgstr "Ignorovať parametre šírky a výšky a spraviť posuvník prispôsobiteľný"
+#~ msgstr ""
+#~ "Ignorovať parametre šírky a výšky a spraviť posuvník prispôsobiteľný"
 
 #~ msgid "Show titles"
 #~ msgstr "Zobraziť názvy"
@@ -1305,8 +1407,11 @@ msgstr ""
 #~ msgid "Allow to change slides with mouse wheel"
 #~ msgstr "Povoliť posúvanie obrázkov kolieskom myši"
 
-#~ msgid "Choose interval between slide animations. Set to 0 to disable autoplay"
-#~ msgstr "Zvoľte interval medzi animáciami posuvníka. Nastavte na 0 pre vypnutie automatického prehrávania"
+#~ msgid ""
+#~ "Choose interval between slide animations. Set to 0 to disable autoplay"
+#~ msgstr ""
+#~ "Zvoľte interval medzi animáciami posuvníka. Nastavte na 0 pre vypnutie "
+#~ "automatického prehrávania"
 
 #~ msgid "Speed"
 #~ msgstr "Rýchlosť"
@@ -1359,8 +1464,11 @@ msgstr ""
 #~ msgid "Allow to rotate carousel with mouse wheel"
 #~ msgstr "Povoliť otáčanie kolotoču kolieskom myši"
 
-#~ msgid "Choose interval between auto animations. Set to 0 to disable autoplay"
-#~ msgstr "Zvoľte interval medzi animáciami. Nastavte na 0 pre vypnutie automatického prehrávania"
+#~ msgid ""
+#~ "Choose interval between auto animations. Set to 0 to disable autoplay"
+#~ msgstr ""
+#~ "Zvoľte interval medzi animáciami. Nastavte na 0 pre vypnutie "
+#~ "automatického prehrávania"
 
 #~ msgid "Open carousel links in new window/tab"
 #~ msgstr "Otvoriť odkazy kolotoru v novom okne/záložke"
@@ -1395,8 +1503,27 @@ msgstr ""
 #~ msgid "Customizable image gallery"
 #~ msgstr "Prispôsobiteľná galéria obrázkov"
 
-#~ msgid "<b>Do not change this field value if you do not understand description below.</b><br/>Relative path to the template file. Default templates is placed under the plugin directory (templates folder). You can copy it under your theme directory and modify as you want. You can use following default templates that already available in the plugin directory:<br/><b%value>templates/default-loop.php</b> - posts loop<br/><b%value>templates/teaser-loop.php</b> - posts loop with thumbnail and title<br/><b%value>templates/single-post.php</b> - single post template<br/><b%value>templates/list-loop.php</b> - unordered list with posts titles"
-#~ msgstr "<b>Nemeňte hodnotu tohto poľa ak nerozumiete popisu nižšie</b><br/>Relatívna cesta k súboru šablóny. Predvolené šablóny sa nachádzajú v adresári s pluginmy (zložka šablóny). Môžete ich skopírovať do svojho adresára s témami a a upravovať ako chcete. Môžete použiť nasledujúce predvolené šablóny, ktoré sú už k dispozícii v adresári pluginu:<br/><b%value>templates/default-loop.php</b> - posts loop<br/><b%value>templates/teaser-loop.php</b> - posts loop with thumbnail and title<br/><b%value>templates/single-post.php</b> - single post template<br/><b%value>templates/list-loop.php</b> -neusporiadaný zoznam s názvami príspevkov"
+#~ msgid ""
+#~ "<b>Do not change this field value if you do not understand description "
+#~ "below.</b><br/>Relative path to the template file. Default templates is "
+#~ "placed under the plugin directory (templates folder). You can copy it "
+#~ "under your theme directory and modify as you want. You can use following "
+#~ "default templates that already available in the plugin directory:<br/><b"
+#~ "%value>templates/default-loop.php</b> - posts loop<br/><b%value>templates/"
+#~ "teaser-loop.php</b> - posts loop with thumbnail and title<br/><b"
+#~ "%value>templates/single-post.php</b> - single post template<br/><b"
+#~ "%value>templates/list-loop.php</b> - unordered list with posts titles"
+#~ msgstr ""
+#~ "<b>Nemeňte hodnotu tohto poľa ak nerozumiete popisu nižšie</b><br/"
+#~ ">Relatívna cesta k súboru šablóny. Predvolené šablóny sa nachádzajú v "
+#~ "adresári s pluginmy (zložka šablóny). Môžete ich skopírovať do svojho "
+#~ "adresára s témami a a upravovať ako chcete. Môžete použiť nasledujúce "
+#~ "predvolené šablóny, ktoré sú už k dispozícii v adresári pluginu:<br/><b"
+#~ "%value>templates/default-loop.php</b> - posts loop<br/><b%value>templates/"
+#~ "teaser-loop.php</b> - posts loop with thumbnail and title<br/><b"
+#~ "%value>templates/single-post.php</b> - single post template<br/><b"
+#~ "%value>templates/list-loop.php</b> -neusporiadaný zoznam s názvami "
+#~ "príspevkov"
 
 #~ msgid "Choose the authors whose posts you want to show"
 #~ msgstr "Zvoľte autorov, ktorých príspevky chcete zobraziť"
@@ -1405,7 +1532,8 @@ msgstr ""
 #~ msgstr "Kláves meta"
 
 #~ msgid "Enter meta key name to show posts that have this key"
-#~ msgstr "Zadajte meta názov kľúča pte zobrazenie príspevkov, ktoré majú tento kľúč"
+#~ msgstr ""
+#~ "Zadajte meta názov kľúča pte zobrazenie príspevkov, ktoré majú tento kľúč"
 
 #~ msgid "Meta key values"
 #~ msgstr "Meta kľúč hodnoty"
@@ -1440,11 +1568,30 @@ msgstr ""
 #~ msgid "Supercharge your WordPress theme with mega pack of shortcodes"
 #~ msgstr "Obohaťte svoju WordPress tému s veľkým balením skrátených kódov"
 
-#~ msgid "<h1>Oops! Plugin not activated&hellip;</h1> <p>Shortcodes Ultimate is not fully compatible with your version of WordPress (%s).<br />Reccomended WordPress version &ndash; %s (or higher).</p><a href=\"%s\">&larr; Return to the plugins screen</a> <a href=\"%s\"%s>Continue and activate anyway &rarr;</a>"
-#~ msgstr "<h1>Ups! Plugin nie je aktivovaný&hellip;</h1> <p>Ultimátne skrátené kódy nie sú plne kompatibilné s vašou verziou WordPressu (%s).<br />Odporúčaná verzia WordPress &ndash; %s (alebo vyššia).</p><a href=\"%s\">&larr; Vrátiť sa na stránku pluginov</a> <a href=\"%s\"%s>Pokračovať a aktivovať aj napriek tomu &rarr;</a>"
+#~ msgid ""
+#~ "<h1>Oops! Plugin not activated&hellip;</h1> <p>Shortcodes Ultimate is not "
+#~ "fully compatible with your version of WordPress (%s).<br />Reccomended "
+#~ "WordPress version &ndash; %s (or higher).</p><a href=\"%s\">&larr; Return "
+#~ "to the plugins screen</a> <a href=\"%s\"%s>Continue and activate anyway "
+#~ "&rarr;</a>"
+#~ msgstr ""
+#~ "<h1>Ups! Plugin nie je aktivovaný&hellip;</h1> <p>Ultimátne skrátené kódy "
+#~ "nie sú plne kompatibilné s vašou verziou WordPressu (%s).<br />Odporúčaná "
+#~ "verzia WordPress &ndash; %s (alebo vyššia).</p><a href=\"%s\">&larr; "
+#~ "Vrátiť sa na stránku pluginov</a> <a href=\"%s\"%s>Pokračovať a aktivovať "
+#~ "aj napriek tomu &rarr;</a>"
 
-#~ msgid "<h1>Oops! Plugin not activated&hellip;</h1> <p>Shortcodes Ultimate is not fully compatible with your PHP version (%s).<br />Reccomended PHP version &ndash; %s (or higher).</p><a href=\"%s\">&larr; Return to the plugins screen</a> <a href=\"%s\"%s>Continue and activate anyway &rarr;</a>"
-#~ msgstr "<h1>Ups! Plugin nie je aktivovaný</h1> <p>Ultimátne skrátené kódy nie sú plne kompatibilné s vašou verziou PHP (%s).<br />Odporúčaná verzia PHP &ndash; %s (alebo vyššia).</p><a href=\"%s\">&larr; Vrátiť sa na stránku pluginov</a> <a href=\"%s\"%s>Pokračovať a aktivovať aj napriek tomu &rarr;</a>"
+#~ msgid ""
+#~ "<h1>Oops! Plugin not activated&hellip;</h1> <p>Shortcodes Ultimate is not "
+#~ "fully compatible with your PHP version (%s).<br />Reccomended PHP version "
+#~ "&ndash; %s (or higher).</p><a href=\"%s\">&larr; Return to the plugins "
+#~ "screen</a> <a href=\"%s\"%s>Continue and activate anyway &rarr;</a>"
+#~ msgstr ""
+#~ "<h1>Ups! Plugin nie je aktivovaný</h1> <p>Ultimátne skrátené kódy nie sú "
+#~ "plne kompatibilné s vašou verziou PHP (%s).<br />Odporúčaná verzia PHP "
+#~ "&ndash; %s (alebo vyššia).</p><a href=\"%s\">&larr; Vrátiť sa na stránku "
+#~ "pluginov</a> <a href=\"%s\"%s>Pokračovať a aktivovať aj napriek tomu "
+#~ "&rarr;</a>"
 
 #~ msgid "Where to start?"
 #~ msgstr "Kde začať?"
@@ -1464,8 +1611,12 @@ msgstr ""
 #~ msgid "Custom formatting"
 #~ msgstr "Vlastné formátovanie"
 
-#~ msgid "Disable this option if you have some problems with other plugins or content formatting"
-#~ msgstr "Zakážte túto možnosť, ak máte nejaké problémy s inými pluginy alebo s formátovaním obsahu"
+#~ msgid ""
+#~ "Disable this option if you have some problems with other plugins or "
+#~ "content formatting"
+#~ msgstr ""
+#~ "Zakážte túto možnosť, ak máte nejaké problémy s inými pluginy alebo s "
+#~ "formátovaním obsahu"
 
 #~ msgid "Documentation article"
 #~ msgstr "Dokumentácia"
@@ -1476,8 +1627,12 @@ msgstr ""
 #~ msgid "Compatibility mode"
 #~ msgstr "Režim kompatibility"
 
-#~ msgid "Enable this option if you have some problems with other plugins that uses similar shortcode names"
-#~ msgstr "Povoľte túto možnosť, ak máte nejaké problémy s inými pluginy, ktoré používajú podobné názvy skrátených kódov"
+#~ msgid ""
+#~ "Enable this option if you have some problems with other plugins that uses "
+#~ "similar shortcode names"
+#~ msgstr ""
+#~ "Povoľte túto možnosť, ak máte nejaké problémy s inými pluginy, ktoré "
+#~ "používajú podobné názvy skrátených kódov"
 
 #~ msgid "etc."
 #~ msgstr "atď."
@@ -1485,8 +1640,14 @@ msgstr ""
 #~ msgid "Skin"
 #~ msgstr "Téma"
 
-#~ msgid "Choose skin for shortcodes.<br /><a href=\"%s\" target=\"_blank\">Learn how to create custom skin</a><br /><a href=\"%s\" target=\"_blank\"><b>Download more skins</b></a>"
-#~ msgstr "Zvoľte tému skrátených kódov<br /><a href=\"%s\" target=\"_blank\">Ako vytvoriť vlastnú tému</a><br /><a href=\"%s\" target=\"_blank\"><b>Stiahnuť viac tém</b></a>"
+#~ msgid ""
+#~ "Choose skin for shortcodes.<br /><a href=\"%s\" target=\"_blank\">Learn "
+#~ "how to create custom skin</a><br /><a href=\"%s\" target=\"_blank"
+#~ "\"><b>Download more skins</b></a>"
+#~ msgstr ""
+#~ "Zvoľte tému skrátených kódov<br /><a href=\"%s\" target=\"_blank\">Ako "
+#~ "vytvoriť vlastnú tému</a><br /><a href=\"%s\" target=\"_blank"
+#~ "\"><b>Stiahnuť viac tém</b></a>"
 
 #~ msgid "Custom CSS"
 #~ msgstr "Vlastné CSS"
@@ -1581,11 +1742,20 @@ msgstr ""
 #~ msgid "What is a shortcode?"
 #~ msgstr "Čo je to skrátený kód?"
 
-#~ msgid "<strong>Shortcode</strong> is a WordPress-specific code that lets you do nifty things with very little effort."
-#~ msgstr "<strong>Skrátený kód</strong> je špecifický kód vo WordPresse ktorý vám umožní robiť šikovné veci s veľmi malým úsilím."
+#~ msgid ""
+#~ "<strong>Shortcode</strong> is a WordPress-specific code that lets you do "
+#~ "nifty things with very little effort."
+#~ msgstr ""
+#~ "<strong>Skrátený kód</strong> je špecifický kód vo WordPresse ktorý vám "
+#~ "umožní robiť šikovné veci s veľmi malým úsilím."
 
-#~ msgid "Shortcodes can embed files or create objects that would normally require lots of complicated, ugly code in just one line. Shortcode = shortcut."
-#~ msgstr "Pomocou skrátených kódov môžete vložiť súbory alebo vytvárať objekty, ktoré za normálnych okolností vyžadujú oveľa komplikovanejší škaredý kód v jednoduchom krátkom kóde."
+#~ msgid ""
+#~ "Shortcodes can embed files or create objects that would normally require "
+#~ "lots of complicated, ugly code in just one line. Shortcode = shortcut."
+#~ msgstr ""
+#~ "Pomocou skrátených kódov môžete vložiť súbory alebo vytvárať objekty, "
+#~ "ktoré za normálnych okolností vyžadujú oveľa komplikovanejší škaredý kód "
+#~ "v jednoduchom krátkom kóde."
 
 #~ msgid "How it works"
 #~ msgstr "Ako to funguje"
@@ -1617,8 +1787,12 @@ msgstr ""
 #~ msgid "-- no parameters --"
 #~ msgstr "-- žiadne parametre --"
 
-#~ msgid "This action will remove all your custom CSS, galleries and settings. Are you sure? This action cannot be undone!"
-#~ msgstr "Táto akcia odstráni všetky vaše vlastné CSS, galérie a nastavenia. Ste i istý? Túto akciu nie je možné vrátiť späť!"
+#~ msgid ""
+#~ "This action will remove all your custom CSS, galleries and settings. Are "
+#~ "you sure? This action cannot be undone!"
+#~ msgstr ""
+#~ "Táto akcia odstráni všetky vaše vlastné CSS, galérie a nastavenia. Ste i "
+#~ "istý? Túto akciu nie je možné vrátiť späť!"
 
 #~ msgid "Insert code"
 #~ msgstr "Vložte kód"
@@ -1638,11 +1812,19 @@ msgstr ""
 #~ msgid "plugin url"
 #~ msgstr "stránka pluginu"
 
-#~ msgid "Are you sure that you want to delete this gallery? This action can't be undone!"
-#~ msgstr "Ste si istí, že chcete zmazať túto galériu? Túto akciu nie je možné vrátiť späť!"
+#~ msgid ""
+#~ "Are you sure that you want to delete this gallery? This action can't be "
+#~ "undone!"
+#~ msgstr ""
+#~ "Ste si istí, že chcete zmazať túto galériu? Túto akciu nie je možné "
+#~ "vrátiť späť!"
 
-#~ msgid "Are you sure that you want to delete this image? This action can't be undone!"
-#~ msgstr "Ste si istí, že chcete zmazať tento obrázok? Túto akciu nie je možné vrátiť späť!"
+#~ msgid ""
+#~ "Are you sure that you want to delete this image? This action can't be "
+#~ "undone!"
+#~ msgstr ""
+#~ "Ste si istí, že chcete zmazať tento obrázok? Túto akciu nie je možné "
+#~ "vrátiť späť!"
 
 #~ msgid "Create new gallery"
 #~ msgstr "Vytvoriť novú galériu"
@@ -1708,7 +1890,9 @@ msgstr ""
 #~ msgstr "Neplatná cesta pre zmenu veľkosti (JPG)."
 
 #~ msgid "Failed to get $dest_file_name (resized image) info via @getimagesize"
-#~ msgstr "Neúspech pri záskaní $dest_file_name (zmenená veľkosť) info cez @getimagesize"
+#~ msgstr ""
+#~ "Neúspech pri záskaní $dest_file_name (zmenená veľkosť) info cez "
+#~ "@getimagesize"
 
 #~ msgid "Welcome"
 #~ msgstr "Vitajte"
@@ -1759,7 +1943,9 @@ msgstr ""
 #~ msgstr "Prednastavený štýl tabuľky"
 
 #~ msgid "Box style preset. This box will be shown for not logged users only"
-#~ msgstr "Prednastavenie štýlu boxu. Toto okno sa zobrazí len neprihláseným používateľom."
+#~ msgstr ""
+#~ "Prednastavenie štýlu boxu. Toto okno sa zobrazí len neprihláseným "
+#~ "používateľom."
 
 #~ msgid "Toggle fullscreen"
 #~ msgstr "Prepnúť na celú obrazovku"
